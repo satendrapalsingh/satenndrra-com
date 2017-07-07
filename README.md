@@ -4,7 +4,9 @@
 
 This is a the source code for my personal website/ home page (not yet live).
 
-http://www.satenndrra.com
+The master branch will host the node/server-side rendered app on heroku.
+
+The static branch will host live site (generated static site version) on AWS-S3 at domain http://www.satenndrra.com
 
 This site/SPA is being written with vue, nuxt.js, pug, less, koa and muse-ui.
 
