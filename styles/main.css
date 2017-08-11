@@ -1,13 +1,45 @@
 /* main style rules */
+body{
+    padding-top:7vmax;
+}
 
 @media(min-width:768px) and (max-width:1023){
     .navtext{
-        font-size:3vh;    
+        font-size:2vh;    
     }
 }
 
 @media(min-width:1024px){
     .navtext{
-        font-size:4vh;
+        font-size:3vh;
     }
+}
+
+#mynav, #myfooter{
+    background-color: #ffffff;
+}
+
+#coding{
+    padding-top:5vmax;
+    height:100vh;
+    color: #ffffff;
+    background-color: #00bcd4;
+}
+
+#bootcamp{
+    padding-top:5vmax;    
+    height:100vh;
+    color: #ffffff;
+    background-color: #ff9800;
+}
+
+#about{
+    padding-top:5vmax;    
+    height:100vh;
+    color: #ffffff;
+    background-color: #009688;
+}
+
+.glyphicon {
+    font-size: 25px;
 }

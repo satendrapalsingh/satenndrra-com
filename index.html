@@ -32,11 +32,11 @@
 
     </head>
 
-    <body>
-        <nav class="navbar navbar-default">
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <nav class="navbar navbar-default navbar-fixed-top" id="mynav">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="false">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapsible" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -51,30 +51,80 @@
                     <h5 class="text-center col-xs-x hidden-sm hidden-md hidden-lg">Coding Bootcamp for Entrepreneurs</h5>                      
                     <p class="text-center hidden-xs col-sm-x col-md-x col-lg-x"><strong>Coding Bootcamp for Entrepreneurs</strong></p>
                 </div>
-                <div class="collapse navbar-collapse" id="navbar-menu">
+                <div class="collapse navbar-collapse" id="navbar-collapsible">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active navtext"><a href="#">What<span class="sr-only">(current)</span></a></li>
-                        <li class="navtext"><a href="#">Why</a></li>
-                        <li class="navtext"><a href="#">Who</a></li>
-                        <li class="navtext"><a href="#">How</a></li>
-                        <li class="navtext"><a href="#">Enroll</a></li>
-                        <li class="navtext"><a href="#">About/Contact</a></li>
+                        <li class="active navtext"><a href="#">Coding for Entrepreneurs<span class="sr-only">(current)</span></a></li>
+                        <li class="navtext"><a href="#bootcamp">Enroll in the Bootcamp</a></li>
+                        <li class="navtext"><a href="#about">About Me</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         
-        <section>
+        <section class="" id="coding">
             <header>
-                
+                <h4>Coding for Entrepreneurs</h4>
             </header>
-            
+            <p>Not everybody needs to learn how to code, but technical skills are fast becoming a necessity</p>
+        </section>
+
+        
+        <section class="" id="bootcamp">
+            <header>
+                <h4>Enroll in the Bootcamp</h4>
+            </header>
+            <p>Upcoming Online Workshops - 5am-8am IST</p>
+            <p>Upcoming In-person Workshops - at Abheek</p>
+            <p>Request an online/in-person Workshop (travel/stay/food cost apply for out of bangalore in-person workshops)</p>
         </section>
         
-        <footer>
-            
+        <section class="" id="about">
+            <header>
+                <h4>About Me</h4>
+            </header>
+            <p>Programmer, Mentor, Unschooler</p>
+        </section>
+        
+        <footer class="footer navbar-fixed-bottom" id="myfooter">
+            <div class="fluid-container">
+                <div class="row">
+                    <div class="col-xs-1">
+                        <a href="#" data-toggle="tooltip" title="Terms of Service">TOS-modal</a>
+                    </div>
+                    <div class="col-xs-1">
+                        <p>social-FB</p>
+                    </div>
+                    <div class="col-xs-1">
+                        <p>social-TWTR</p>
+                    </div>
+                    <div class="col-xs-1">
+                        <p>social-LNKD</p>
+                    </div>
+                    <div class="col-xs-2">
+                        <p>stenlogo, CC-BY-SA</p>
+                    </div>     
+                    <div class="col-xs-2">
+                        <a href="#" data-toggle="tooltip" title="Contact Me">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                        </a>                        
+                    </div>                    
+                    <div class="col-xs-1">
+                        <p>social-gplus</p>
+                    </div>
+                    <div class="col-xs-1">
+                        <p>social-MDM</p>
+                    </div>
+                    <div class="col-xs-1">
+                        <p>social-RDDT</p>
+                    </div>
+                    <div class="col-xs-1">
+                        <p>PRIPO modal</p>
+                    </div>
+                </div>
+            </div>
         </footer>
 
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="/scripts/main.js"></script>
     </body>
