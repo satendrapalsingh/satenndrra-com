@@ -26,11 +26,18 @@ body{
     background-color: #00bcd4;
 }
 
-#workshops{
+#individual{
     padding-top:5vmax;    
     height:100vh;
     color: #ffffff;
     background-color: #ff9800;
+}
+
+#organization{
+    padding-top:5vmax;    
+    height:100vh;
+    color: #ffffff;
+    background-color: #00bcd4;
 }
 
 #about{
