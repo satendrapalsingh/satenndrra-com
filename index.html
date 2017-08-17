@@ -33,7 +33,7 @@
 
     </head>
 
-    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <body data-spy="scroll" data-target="#mynav" data-offset="50">
         <nav class="navbar navbar-default navbar-fixed-top" id="mynav">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -44,29 +44,45 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand col-xs-* hidden-sm hidden-md hidden-lg" href="#">
-                        <img src="/assets/ico/favicon-32x32.png" alt="satenndrra logo">
+                        <img data-toggle="collapse" data-target=".navbar-collapse" src="/assets/ico/favicon-32x32.png" alt="satenndrra logo">
                     </a>
                     <a class="navbar-brand hidden-xs col-sm-* col-md-* col-lg-*" href="#">
-                        <img src="/assets/logo/logox.png" alt="satenndrra logo">
+                        <img data-toggle="collapse" data-target=".navbar-collapse" src="/assets/logo/logox.png" alt="satenndrra logo">
                     </a>  
-                    <h5 class="text-center col-xs-x hidden-sm hidden-md hidden-lg">Programming for Entrepreneurs</h5>                      
+                    <h5 class="text-center col-xs-* hidden-sm hidden-md hidden-lg">Programming for Entrepreneurs</h5>                      
                     <p class="text-center hidden-xs col-sm-x col-md-x col-lg-x"><strong>Programming for Entrepreneurs</strong></p>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-collapsible">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active navtext"><a href="#">Code<span class="sr-only">(current)</span></a></li>
-                        <li class="navtext"><a href="#bootcamp">Bootcamp for Individuals</a></li>
-                        <li class="navtext"><a href="#workshop">Workshops for Organizations</a></li>
-                        <li class="navtext"><a href="#about">About</a></li>
+<!-- uncollapsed large-screen-navbar version with scroll-spy activated  -->                    
+                    <ul class="nav navbar-nav navbar-right hidden-xs col-sm-* col-md-* col-lg-*">
+<!--
+                        <li class="active navtext"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+-->                        
+                        <li class="navtext"><a href="#nav-code">Code/Zero</a></li>
+                        <li class="navtext"><a href="#nav-workshops">Workshops</a></li>
+                        <li class="navtext"><a href="#nav-request">Request</a></li>
+                        <li class="navtext"><a href="#nav-faqs">FAQs</a></li>
+                        <li class="navtext"><a href="#nav-about">About</a></li>
                     </ul>
+<!-- separate mobile-navbar version with menu-toggle on navlink click (as this disables scroll spy)  -->
+                    <ul class="nav navbar-nav navbar-right col-xs-* hidden-sm hidden-md hidden-lg">
+<!--
+                        <li class="active navtext"><a data-toggle="collapse" data-target=".navbar-collapse" href="#">Home<span class="sr-only">(current)</span></a></li>
+-->                        
+                        <li class="navtext"><a data-toggle="collapse" data-target=".navbar-collapse" href="#nav-code">Code/Zero</a></li>
+                        <li class="navtext"><a data-toggle="collapse" data-target=".navbar-collapse" href="#nav-workshops">Workshops</a></li>
+                        <li class="navtext"><a data-toggle="collapse" data-target=".navbar-collapse" href="#nav-request">Request</a></li>
+                        <li class="navtext"><a data-toggle="collapse" data-target=".navbar-collapse" href="#nav-faqs">FAQs</a></li>
+                        <li class="navtext"><a data-toggle="collapse" data-target=".navbar-collapse" href="#nav-about">About</a></li>
+                    </ul>
+                    
                 </div>
             </div>
         </nav>
-        
-        <section class="" id="coding">
+
+        <section class="jumbotron">
             <header>
-                <h4>Code/ Don't Code</h4>
-                <h5>Your App is Your Business</h5>
+                <h4>Your App Is Your Business</h4>
             </header>
             <p>typed.js:
             <ul>
@@ -75,6 +91,13 @@
                 <li>after-course support via an accessible community</li>
             </ul>
             </p>
+
+        </section>
+
+        <section class="" id="code">
+            <header>
+                <h4><span id="nav-code"></span>Code</h4>
+            </header>
 
             <p>Not everybody needs to learn how to code, but technical skills are fast becoming a necessity</p>
             <p>You can choose to
@@ -86,9 +109,9 @@
             </p>
         </section>
 
-        <section class="" id="bootcamp">
+        <section class="" id="workshops">
             <header>
-                <h4>Enroll in the Bootcamp</h4>
+                <h4><span id="nav-workshops"></span>Workshops</h4>
                 
                 <h5>For</h5>
                 <h6>Entrepreneur</h6>
@@ -116,9 +139,9 @@
             <p>Request an online/in-person Workshop (travel/stay/food costs apply for out of bangalore in-person workshops)</p>
         </section>        
         
-        <section class="" id="workshop">
+        <section class="" id="request">
             <header>
-                <h4>Request a Custom Workshop</h4>
+                <h4><span id="nav-request"></span>Request a Custom Workshop</h4>
                 <h5>Entrepreneur Organizations/ Clubs</h5>
                 <h5>Startup Incubators/ Accelerators</h5>
                 <h5>MBA Colleges/ Entrepreneur Cells</h5>
@@ -138,14 +161,34 @@
             <p>Request an online/in-person Workshop (travel/stay/food costs apply for out of bangalore in-person workshops)</p>
         </section>
         
+        <section class="" id="faqs">
+            <header>
+                <h4><span id="nav-faqs"></span>Frequently Asked Questions</h4>
+                <h5>And my witty answers to those...</h5>     
+                <h5>And my witty answers to those...</h5> 
+                <h5>And my witty answers to those...</h5> 
+                <h5>And my witty answers to those...</h5>     
+                <h5>And my witty answers to those...</h5>     
+                <h5>And my witty answers to those...</h5> 
+                <h5>And my witty answers to those...</h5> 
+                <h5>And my witty answers to those...</h5>   
+                <h5>And my witty answers to those...</h5>     
+                <h5>And my witty answers to those...</h5> 
+                <h5>And my witty answers to those...</h5> 
+                <h5>And my witty answers to those...</h5>                   
+            </header>
+            
+            <p>Blah Blah Blah</p>
+        </section>        
+        
         <section class="" id="about">
             <header>
-                <h4>About Me/ Contact</h4>
+                <h4><span id="nav-about"></span>About Me/ Contact</h4>
             </header>
             <p>Programmer, Mentor, Unschooler</p>
             <p>IT/E&R exp, motivation to teach entrepreneurs programming, curr techstack, github-projects, medium-blogs, slack/discord/gitter groups</p>
 
-            <a href="#" data-toggle="tooltip" title="Terms of Service"><h5>Other Trainings</h5></a>
+            <a href="#" data-toggle="tooltip" title="Other Trainings"><h5>Other Trainings</h5></a>
             <ul>
                 <li>Corporate Trainings - On-the-job Node/React/RN/Vue/Meteor trainings for startup teams, 3hrs-daily/ online [upcoming/register]</li>                    
                 <li>Open-Source Mentoring - Work with me on open-source JS projects, 1hr-daily team catchup [upcoming programmes/register]</li>

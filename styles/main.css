@@ -1,48 +1,70 @@
 /* main style rules */
-body{
-    padding-top:7vmax;
-}
 
+/* overall styles and media queries */
+body{
+    padding-top:8vmax;
+    padding-bottom: 2vmax;
+}
+#mynav, #myfooter{
+    background-color: #ffffff;
+}
+/* appropriately positioned h4/span anchor to offset fixed-navbar height and to prevent hiding of the navigated-to-content */
+h4{
+    position: relative;
+}
+h4 span{
+    position: absolute;
+    top: -100px;
+}
+/* navbar */
 @media(min-width:768px) and (max-width:1023){
     .navtext{
         font-size:2vh;    
     }
 }
-
 @media(min-width:1024px){
     .navtext{
         font-size:3vh;
     }
 }
 
-#mynav, #myfooter{
-    background-color: #ffffff;
+/* sections */
+#jumbo{
+    padding:0px;
 }
-
-#coding{
-    padding-top:5vmax;
-    height:100vh;
+#code{
+    margin-top: -30px;    
+    padding: 1vmax 0 1vmax 0;
     color: #ffffff;
     background-color: #00bcd4;
 }
-
-#individual{
-    padding-top:5vmax;    
-    height:100vh;
+#workshops{
+    margin-top: -13px;    
+    padding: 1vmax 0 1vmax 0; 
     color: #ffffff;
     background-color: #ff9800;
 }
-
-#organization{
-    padding-top:5vmax;    
-    height:100vh;
+#request{
+    margin-top: -13px;    
+    padding: 1vmax 0 1vmax 0; 
     color: #ffffff;
     background-color: #00bcd4;
 }
-
+#faqs{
+    margin-top: -13px;    
+    padding: 1vmax 0 1vmax 0;
+    color: #ffffff;
+    background-color: #ff9800;
+}
 #about{
-    padding-top:5vmax;    
-    height:100vh;
+    margin-top: -13px;
+    padding: 1vmax 0 1vmax 0;
     color: #ffffff;
     background-color: #009688;
+}
+
+/* flexbox container */
+.flexcon{
+    display:flex;
+    flex-wrap: wrap;
 }
