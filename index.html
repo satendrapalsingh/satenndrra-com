@@ -4,7 +4,7 @@
         
         <meta charset="utf-8">
 
-        <title>Satenndrra - Programming for Entrepreneurs</title>
+        <title>Programming for Entrepreneurs</title>
 
 <!-- favicons for browser-tab, generated at http://www.favicon-generator.org/ -->
         <link rel="apple-touch-icon" sizes="57x57" href="assets/ico/apple-icon-57x57.png">
@@ -59,10 +59,10 @@
                         <li class="active navtext"><a href="#">Home<span class="sr-only">(current)</span></a></li>
 -->                        
                         <li class="navtext"><a href="#nav-code">Code/Zero</a></li>
-                        <li class="navtext"><a href="#nav-workshops">Workshops</a></li>
-                        <li class="navtext"><a href="#nav-request">Request</a></li>
+                        <li class="navtext"><a href="#nav-enroll">Enroll/Bootcamp</a></li>
+                        <li class="navtext"><a href="#nav-request">Request/Workshop</a></li>
                         <li class="navtext"><a href="#nav-faqs">FAQs</a></li>
-                        <li class="navtext"><a href="#nav-about">About</a></li>
+                        <li class="navtext"><a href="#nav-about">About/Me</a></li>
                     </ul>
 <!-- separate mobile-navbar version with menu-toggle on navlink click (as this disables scroll spy)  -->
                     <ul class="nav navbar-nav navbar-right col-xs-* hidden-sm hidden-md hidden-lg">
@@ -70,19 +70,27 @@
                         <li class="active navtext"><a data-toggle="collapse" data-target=".navbar-collapse" href="#">Home<span class="sr-only">(current)</span></a></li>
 -->                        
                         <li class="navtext"><a data-toggle="collapse" data-target=".navbar-collapse" href="#nav-code">Code/Zero</a></li>
-                        <li class="navtext"><a data-toggle="collapse" data-target=".navbar-collapse" href="#nav-workshops">Workshops</a></li>
-                        <li class="navtext"><a data-toggle="collapse" data-target=".navbar-collapse" href="#nav-request">Request</a></li>
+                        <li class="navtext"><a data-toggle="collapse" data-target=".navbar-collapse" href="#nav-enroll">Enroll/Bootcamp</a></li>
+                        <li class="navtext"><a data-toggle="collapse" data-target=".navbar-collapse" href="#nav-request">Request/Workshop</a></li>
                         <li class="navtext"><a data-toggle="collapse" data-target=".navbar-collapse" href="#nav-faqs">FAQs</a></li>
-                        <li class="navtext"><a data-toggle="collapse" data-target=".navbar-collapse" href="#nav-about">About</a></li>
+                        <li class="navtext"><a data-toggle="collapse" data-target=".navbar-collapse" href="#nav-about">About/Me</a></li>
                     </ul>
                     
                 </div>
             </div>
         </nav>
 
-        <section class="jumbotron">
+        <section class="mainsec" id="">
+<!-- dummy element for adding additional height to this section on small screens -->
+            <div class="offset-dummy col-xs-* hidden-sm hidden-md hidden-lg"></div>
             <header>
-                <h4>Your App Is Your Business</h4>
+                <h4><span id="nav-code"></span>Code</h4>
+            </header>
+
+            <header>
+                <h5>Your App Is Your Business - Own It</h5>
+                <h6>CODE/ZERO: Free Online/Offline Weekend Programming Workshops - No More Excuses</h6>
+                <button>REGISTER NOW</button>
             </header>
             <p>typed.js:
             <ul>
@@ -91,14 +99,7 @@
                 <li>after-course support via an accessible community</li>
             </ul>
             </p>
-
-        </section>
-
-        <section class="" id="code">
-            <header>
-                <h4><span id="nav-code"></span>Code</h4>
-            </header>
-
+            
             <p>Not everybody needs to learn how to code, but technical skills are fast becoming a necessity</p>
             <p>You can choose to
                 <ul>
@@ -109,9 +110,9 @@
             </p>
         </section>
 
-        <section class="" id="workshops">
+        <section class="mainsec" id="enroll">
             <header>
-                <h4><span id="nav-workshops"></span>Workshops</h4>
+                <h4><span id="nav-enroll"></span>Enroll in the Bootcamp</h4>
                 
                 <h5>For</h5>
                 <h6>Entrepreneur</h6>
@@ -139,14 +140,14 @@
             <p>Request an online/in-person Workshop (travel/stay/food costs apply for out of bangalore in-person workshops)</p>
         </section>        
         
-        <section class="" id="request">
+        <section class="mainsec" id="request">
             <header>
-                <h4><span id="nav-request"></span>Request a Custom Workshop</h4>
+                <h4><span id="nav-request"></span>Request a Workshop</h4>
                 <h5>Entrepreneur Organizations/ Clubs</h5>
                 <h5>Startup Incubators/ Accelerators</h5>
                 <h5>MBA Colleges/ Entrepreneur Cells</h5>
             </header>
-        
+            <p>orgganizations request/ book custom workshops at your site</p>
             <p>join <a href="https://satenndrra.slack.com">#satenndrra-SLACK-team</a> via heroku app
                 <button> Join Satenndrra at Slack            
                     <i class="fa fa-slack" aria-hidden="true"></i>
@@ -161,7 +162,7 @@
             <p>Request an online/in-person Workshop (travel/stay/food costs apply for out of bangalore in-person workshops)</p>
         </section>
         
-        <section class="" id="faqs">
+        <section class="mainsec" id="faqs">
             <header>
                 <h4><span id="nav-faqs"></span>Frequently Asked Questions</h4>
                 <h5>And my witty answers to those...</h5>     
@@ -181,9 +182,9 @@
             <p>Blah Blah Blah</p>
         </section>        
         
-        <section class="" id="about">
+        <section class="mainsec" id="about">
             <header>
-                <h4><span id="nav-about"></span>About Me/ Contact</h4>
+                <h4><span id="nav-about"></span>About Me</h4>
             </header>
             <p>Programmer, Mentor, Unschooler</p>
             <p>IT/E&R exp, motivation to teach entrepreneurs programming, curr techstack, github-projects, medium-blogs, slack/discord/gitter groups</p>
@@ -197,7 +198,6 @@
             
             <p>contact-me form (tellform/ google-form)</p>
             <p>connect with me on - facebook, twitter, linkedin, google-plus, medium, github, reddit</p>
-
         </section>
         
         <footer class="footer navbar-fixed-bottom" id="myfooter">

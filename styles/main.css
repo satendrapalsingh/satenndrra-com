@@ -2,8 +2,14 @@
 
 /* overall styles and media queries */
 body{
-    padding-top:8vmax;
+    padding-top: 9vmax;
     padding-bottom: 2vmax;
+    
+    background-image: url('../assets/pics/ccbysa.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 #mynav, #myfooter{
     background-color: #ffffff;
@@ -27,39 +33,30 @@ h4 span{
         font-size:3vh;
     }
 }
+/* images */
 
-/* sections */
-#jumbo{
-    padding:0px;
+
+/* main sections */
+.offset-dummy{
+    height:2vmax;
 }
-#code{
-    margin-top: -30px;    
+.mainsec{
     padding: 1vmax 0 1vmax 0;
     color: #ffffff;
+}
+#code{
     background-color: #00bcd4;
 }
-#workshops{
-    margin-top: -13px;    
-    padding: 1vmax 0 1vmax 0; 
-    color: #ffffff;
+#enroll{
     background-color: #ff9800;
 }
 #request{
-    margin-top: -13px;    
-    padding: 1vmax 0 1vmax 0; 
-    color: #ffffff;
     background-color: #00bcd4;
 }
 #faqs{
-    margin-top: -13px;    
-    padding: 1vmax 0 1vmax 0;
-    color: #ffffff;
     background-color: #ff9800;
 }
 #about{
-    margin-top: -13px;
-    padding: 1vmax 0 1vmax 0;
-    color: #ffffff;
     background-color: #009688;
 }
 
