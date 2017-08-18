@@ -1,78 +1,158 @@
 /* main style rules */
 
-/* overall styles and media queries */
-body{
-    
+html, body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
     padding-top: 9vmax;
     padding-bottom: 2vmax;
-    
-    background-image: url('../assets/pics/ccbysa-dark.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 .logo-orange{
     color: #D45500;
 }
+
 .logo-grey{
     color: #666666;
 }
+
 .white-color{
     color: #ffffff;
 }
+
 #mynav, #myfooter{
     background-color: #ffffff;
 }
 
+
+/* background video and image */
+
+.bgvid-overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.fullscbg{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    
+}
+
+.fullscbg::before{
+    content:"";
+    position:absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -100;
+}
+
+.fullscbgvid{
+    position:absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -6vmax;
+    width: 112%;
+    height: 112%;
+}
+
+
 /* appropriately positioned h4/span anchor to offset fixed-navbar height and to prevent hiding of the navigated-to-content */
+
 h4{
     position: relative;
 }
+
 h4 span{
     position: absolute;
     top: -100px;
 }
 
-/* navbar */
-@media(min-width:768px) and (max-width:1023){
+
+/* media queries for navbar & background video/image */
+
+@media(max-width: 1023px){
+    .fullscbg{
+        background: url('../assets/pics/launch.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .fullscbgvid{
+        display: none;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1023){
     .navtext{
         font-size:2vh;    
     }
 }
-@media(min-width:1024px){
+
+@media(min-width: 1024px){
     .navtext{
         font-size:3vh;
     }
 }
 
+
 /* main sections */
+
 .offset-dummy{
     height:2vmax;
 }
+
 .mainsec{
     padding: 1vmax 0 1vmax 0;
     color: #ffffff;
 }
 
 #code{
-
+    height: 100%;
+    width: 100%;   
 }
+
 #enroll{
     background-color: #ff9800;
 }
+
 #request{
     background-color: #00bcd4;
 }
+
 #faqs{
     background-color: #ff9800;
 }
+
 #about{
     background-color: #009688;
 }
 
+
+/* scrolldown arrow */
+
+.arrowdiv{
+    text-align: center;
+    margin: 8% 0;
+}
+
+
 /* flexbox container */
+
 .flexcon{
     display:flex;
     flex-wrap: wrap;
