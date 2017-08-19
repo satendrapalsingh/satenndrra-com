@@ -21,11 +21,19 @@ html, body{
 }
 
 #mynav, #myfooter{
-    background-color: #ffffff;
+    color: #666666;
+    background-color: #000000;
 }
 
+.nav.navbar-nav.navbar-right li a {
+    color: #666666;
+}
 
-/* background video and image */
+.icon-bar {
+   background-color:#666666 !important;
+}
+
+/* background video */
 
 .bgvid-overlay{
     position: fixed;
@@ -34,8 +42,8 @@ html, body{
     bottom: 0;
     left: 0;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
 .fullscbg{
@@ -84,7 +92,8 @@ h4 span{
 
 /* media queries for navbar & background video/image */
 
-@media(max-width: 1023px){
+/* don't play bg-video for mobile devices smaller than the ipad, fallback to video poster image*/
+@media(max-width: 765px){
     .fullscbg{
         background: url('../assets/pics/launch.jpg');
         background-repeat: no-repeat;
@@ -96,16 +105,10 @@ h4 span{
         display: none;
     }
 }
-
-@media(min-width: 768px) and (max-width: 1023){
+/* make navbar text scale for ipad portrait and landscape modes */
+@media(min-width: 768px) and (max-width: 1024px){
     .navtext{
-        font-size:2vh;    
-    }
-}
-
-@media(min-width: 1024px){
-    .navtext{
-        font-size:3vh;
+        font-size:3vw;    
     }
 }
 
@@ -117,25 +120,46 @@ h4 span{
 }
 
 .mainsec{
-    padding: 1vmax 0 1vmax 0;
-    color: #ffffff;
+    height: 100%;
+    width: 100%;
+    padding: 1vmax 0 1vmax 0;    
 }
 
-#code{
+.landing{
     height: 100%;
     width: 100%;   
 }
 
+
+.mainsecN1{
+    color: #666666;
+    background-color: #ffffff;
+}
+
+.mainsecN2{
+    color: #666666;    
+    background-color: #4ABDAC;
+}
+
+.mainsecN3{
+    color: #666666;    
+    background-color: #ff7043;
+}
+
+#free{
+    background-color: #4ABDAC;
+}
+
 #enroll{
-    background-color: #ff9800;
+    background-color: #D45500;
 }
 
 #request{
-    background-color: #00bcd4;
+    background-color: #F7882F;
 }
 
 #faqs{
-    background-color: #ff9800;
+    background-color: #1FB58F;
 }
 
 #about{
@@ -151,9 +175,15 @@ h4 span{
 }
 
 
-/* flexbox container */
+/* flexbox */
 
-.flexcon{
-    display:flex;
+.flexcont{
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flexitem{
+    height: 100px;
+    width: 100px;
 }
