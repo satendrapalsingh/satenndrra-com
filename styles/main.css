@@ -4,8 +4,7 @@ html, body{
     margin: 0;
     height: 100%;
     width: 100%;
-    padding-top: 9vmax;
-    padding-bottom: 2vmax;
+    padding-top: 8vmax;
 }
 
 .logo-orange{
@@ -16,21 +15,21 @@ html, body{
     color: #666666;
 }
 
-.white-color{
-    color: #ffffff;
+#mynav, #myfoot{
+    color: #BDBDBD;
+    background-color: #222222;
 }
 
-#mynav, #myfooter{
-    color: #666666;
-    background-color: #000000;
+.tagline{
+        color: #BDBDBD;
 }
 
 .nav.navbar-nav.navbar-right li a {
-    color: #666666;
+    color: #BDBDBD;
 }
 
 .icon-bar {
-   background-color:#666666 !important;
+   background-color: #BDBDBD !important;
 }
 
 /* background video */
@@ -42,7 +41,7 @@ html, body{
     bottom: 0;
     left: 0;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: -1;
 }
 
@@ -92,8 +91,8 @@ h4 span{
 
 /* media queries for navbar & background video/image */
 
-/* don't play bg-video for mobile devices smaller than the ipad, fallback to video poster image*/
-@media(max-width: 765px){
+/* play video only for ipad landscape-mode (width 1023px) and larger screens, fall back to video poster-image for smaller screens*/
+@media(max-width: 1023px){
     .fullscbg{
         background: url('../assets/pics/launch.jpg');
         background-repeat: no-repeat;
@@ -105,65 +104,53 @@ h4 span{
         display: none;
     }
 }
+
 /* make navbar text scale for ipad portrait and landscape modes */
+
 @media(min-width: 768px) and (max-width: 1024px){
     .navtext{
-        font-size:3vw;    
+        font-size: 2vmax;    
     }
 }
 
+@media(min-width: 1025px){
+    .navtext{
+        font-size: 3.5vmin;
+    }
+}
 
 /* main sections */
 
+/* dummy offset element for adding additional height on smaller screens*/
 .offset-dummy{
-    height:2vmax;
-}
-
-.mainsec{
-    height: 100%;
-    width: 100%;
-    padding: 1vmax 0 1vmax 0;    
+    height: 2vmax;
 }
 
 .landing{
     height: 100%;
     width: 100%;   
+    padding: 1vmax 0 1vmax 0;        
 }
 
-
-.mainsecN1{
-    color: #666666;
-    background-color: #ffffff;
+.mainsec{
+    padding: 1vmax 0 1vmax 0;    
 }
 
-.mainsecN2{
-    color: #666666;    
-    background-color: #4ABDAC;
+.mainsec h4, .mainsec h5, .mainsec h6, .mainsec p, .mainsec a{
+    color: #E0E0E0;
 }
 
-.mainsecN3{
-    color: #666666;    
-    background-color: #ff7043;
+.section1{
+    background-color: #00897b;
 }
 
-#free{
-    background-color: #4ABDAC;
+.section2{
+    background-color: #00695c;
 }
 
-#enroll{
-    background-color: #D45500;
-}
-
-#request{
-    background-color: #F7882F;
-}
-
-#faqs{
-    background-color: #1FB58F;
-}
-
-#about{
-    background-color: #009688;
+.section3{
+    background-color: #004d40;
+    margin-bottom: 30px;
 }
 
 
@@ -180,10 +167,13 @@ h4 span{
 .flexcont{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-
 .flexitem{
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
+}
+.flexitemsub{
+    height: 75px;
+    width: 75px;
 }
