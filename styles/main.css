@@ -41,7 +41,7 @@ html, body{
     bottom: 0;
     left: 0;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: -1;
 }
 
@@ -89,36 +89,6 @@ h4 span{
 }
 
 
-/* media queries for navbar & background video/image */
-
-/* play video only for ipad landscape-mode (width 1023px) and larger screens, fall back to video poster-image for smaller screens*/
-@media(max-width: 1023px){
-    .fullscbg{
-        background: url('../assets/pics/launch.jpg');
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-        background-size: cover;
-    }
-    .fullscbgvid{
-        display: none;
-    }
-}
-
-/* make navbar text scale for ipad portrait and landscape modes */
-
-@media(min-width: 768px) and (max-width: 1024px){
-    .navtext{
-        font-size: 2vmax;    
-    }
-}
-
-@media(min-width: 1025px){
-    .navtext{
-        font-size: 3.5vmin;
-    }
-}
-
 /* main sections */
 
 /* dummy offset element for adding additional height on smaller screens*/
@@ -127,17 +97,20 @@ h4 span{
 }
 
 .landing{
-    height: 100%;
-    width: 100%;   
-    padding: 1vmax 0 1vmax 0;        
+    margin-bottom: 5vmax;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    color: #E0E0E0;
 }
 
 .mainsec{
     padding: 1vmax 0 1vmax 0;    
 }
 
-.mainsec h4, .mainsec h5, .mainsec h6, .mainsec p, .mainsec a{
-    color: #E0E0E0;
+/* dummy section to scale up landing-text-spacing according to viewport size*/
+.dummyrow{
+    height: 1vmax;
 }
 
 .section1{
@@ -176,4 +149,41 @@ h4 span{
 .flexitemsub{
     height: 75px;
     width: 75px;
+}
+
+/* media-query rules should come last so as to get overridden */
+
+/* play video only for ipad landscape-mode (width 1023px) and larger screens, fall back to video poster-image for smaller screens*/
+@media (max-width: 1023px){
+    .fullscbg{
+        background: url('../assets/pics/launch.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .fullscbgvid{
+        display: none;
+    }
+}
+
+/* make navbar text scale for ipad portrait and landscape modes */
+@media (min-width: 768px) and (max-width: 1024px){
+    .navtext{
+        font-size: 2vmax;    
+    }
+}
+@media (min-width: 1025px){
+    .navtext{
+        font-size: 3.5vmin;
+    }
+}
+
+/* adjust landing section spacing for small-screen landscape modes by setting height/width to 100% only for all portrait and large landscape modes */
+@media (min-width: 768px), (max-width: 767px) and (orientation : portrait){
+    .landing{
+        height: 100%;
+        width: 100%;   
+        margin-bottom: 0;        
+    }
 }

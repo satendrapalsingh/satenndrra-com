@@ -13,13 +13,15 @@ $(function(){
     });
 
         typewriter
-            .typeString("Essential Tech Skills for Entrepreneurs")
-            .pauseFor(2500)
-            .deleteChars(13)
-            .typeString('Solopreneurs')
-            .pauseFor(2500)
-            .deleteChars(12)
-            .typeString("Startup-Founders")
+            .pauseFor(4000)         
+            .typeString("Code it...")
+            .pauseFor(4000)
+            .deleteChars(10)
+            .typeString('Launch it..')
+            .pauseFor(4000)
+            .deleteChars(11)
+            .typeString("Own it.")
+            .pauseFor(4000)                        
             .start();
 
 });
