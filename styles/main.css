@@ -5,6 +5,7 @@ html, body{
     height: 100%;
     width: 100%;
     padding-top: 8vmax;
+    font-family: Verdana;
 }
 
 .logo-orange{
@@ -15,7 +16,7 @@ html, body{
     color: #666666;
 }
 
-#mynav, #myfoot{
+#mynav, #foot{
     color: #BDBDBD;
     background-color: #222222;
 }
@@ -114,15 +115,19 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .section1{
-    background-color: #00897b;
+    background-color: #656565;
 }
 
 .section2{
-    background-color: #00695c;
+    background-color: #555555;
 }
 
 .section3{
-    background-color: #004d40;
+    background-color: #656565;
+}
+
+.section4{
+    background-color: #454545;
     margin-bottom: 30px;
 }
 
