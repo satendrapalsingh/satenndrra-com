@@ -5,7 +5,12 @@ html, body{
     height: 100%;
     width: 100%;
     padding-top: 8vmax;
-    font-family: Verdana;
+    font-family: Verdana !important;
+}
+
+/* remove hover-underline from anchors and links */
+a, u {
+    text-decoration: none !important;
 }
 
 .logo-orange{
@@ -92,11 +97,6 @@ h4 span{
 
 /* main sections */
 
-/* dummy offset element for adding additional height on smaller screens*/
-.offset-dummy{
-    height: 2vmax;
-}
-
 .landing{
     margin-bottom: 5vmax;
 }
@@ -111,23 +111,19 @@ h1, h2, h3, h4, h5, h6, p{
 
 /* dummy section to scale up landing-text-spacing according to viewport size*/
 .dummyrow{
-    height: 1vmax;
+    height: 4vh;
 }
 
 .section1{
-    background-color: #656565;
 }
 
 .section2{
-    background-color: #555555;
 }
 
 .section3{
-    background-color: #656565;
 }
 
 .section4{
-    background-color: #454545;
     margin-bottom: 30px;
 }
 
@@ -137,6 +133,20 @@ h1, h2, h3, h4, h5, h6, p{
 .arrowdiv{
     text-align: center;
     margin: 8% 0;
+}
+
+/* panels, lists & accordians */
+
+/* plus-minus symbol for accordians */
+.panel-group .panel-heading a:before {
+    font-family: FontAwesome;
+    content: "\f146";        /* fontawesome minus-square icon unicode*/
+    display: inline-block;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+.panel-group .panel-heading a.collapsed:before {
+    content: "\f0fe";        /* fontawesome plus-square icon unicode*/
 }
 
 
