@@ -24,10 +24,12 @@ a, u {
 #mynav, #foot{
     color: #BDBDBD;
     background-color: #222222;
+    font-family: Verdana;
 }
 
 .tagline{
         color: #BDBDBD;
+        font-family: Verdana;
 }
 
 .nav.navbar-nav.navbar-right li a {
@@ -85,11 +87,11 @@ a, u {
 
 /* appropriately positioned h4/span anchor to offset fixed-navbar height and to prevent hiding of the navigated-to-content */
 
-h4{
+.mainsec h3{
     position: relative;
 }
 
-h4 span{
+.mainsec h3 span{
     position: absolute;
     top: -100px;
 }
@@ -161,10 +163,7 @@ h1, h2, h3, h4, h5, h6, p{
     height: 200px;
     width: 200px;
 }
-.flexitemsub{
-    height: 75px;
-    width: 75px;
-}
+
 
 /* media-query rules should come last so as to get overridden */
 
