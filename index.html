@@ -29,6 +29,7 @@
 <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    -->
         <link rel="stylesheet" href="Https://cdn.bootcss.com/hover.css/2.1.1/css/hover-min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/stackicons/1.0/css/stackicons-social.min.css">
 <!-- light-theme -->
 <!--   <link rel="stylesheet" href="/styles/paper.min.css">  -->
 <!-- dark-theme -->
@@ -124,12 +125,20 @@
                 <div class="row dummyrow"></div>
                 <div class="row">
                     <div class="col-xs-6 text-center">
-                        <button class="btn btn-warning btn-lg text-center hidden-xs col-sm-* col-md-* col-lg-*">FreeClass</button>  
-                        <button class="btn btn-warning btn-sm text-center col-xs-* hidden-sm hidden-md hidden-lg">FreeClass</button>  
+                        <a class="hidden-xs col-sm-* col-md-* col-lg-* hvr-float-shadow" title="" href="https://gitter.im/satenndrra/entrepreneurs" target="_blank">
+                            <img src="../assets/badges/gitter.svg" height="40vmax" width="200vmax" alt="gitter chat">                    
+                        </a>                          
+                        <a class="col-xs-* hidden-sm hidden-md hidden-lg"  title="" href="https://gitter.im/satenndrra/entrepreneurs" target="_blank">
+                            <img src="../assets/badges/gitter.svg" height="25vmax" width="125vmax" alt="gitter chat">                    
+                        </a>   
                     </div>
                     <div class="col-xs-6 text-center">         
-                        <button class="btn btn-primary btn-lg hidden-xs col-sm-* col-md-* col-lg-*">WorkShops</button>  
-                        <button class="btn btn-primary btn-sm col-xs-* hidden-sm hidden-md hidden-lg">Workshops</button>  
+                        <a class="hidden-xs col-sm-* col-md-* col-lg-* hvr-float-shadow" title="" href="https://www.facebook.com/groups/satenndrradotcom/" target="_blank">
+                            <img src="../assets/badges/fbgroup.png" height="40vmax" width="200vmax" alt="facebook group">                    
+                        </a>   
+                        <a class="col-xs-* hidden-sm hidden-md hidden-lg" title="" href="https://www.facebook.com/groups/satenndrradotcom/" target="_blank">
+                            <img src="../assets/badges/fbgroup.png" height="25vmax" width="125vmax" alt="facebook group">                    
+                        </a>  
                     </div>
                 </div>
             </div>
@@ -174,9 +183,9 @@
                 </div>
                 
                 
-                <button class="btn btn-success btn-lg">Join Me on Gitter</button>   
-                <p>https://gitter.im/satenndrra/beginners</p>
-                <button class="btn btn-success btn-lg">Join A FreeClass</button>
+                <script src="https://apis.google.com/js/platform.js"></script>
+                <div class="g-ytsubscribe" data-channelid="UCKcJ82JFdNmSLaOwJ99SL7g" data-layout="full" data-count="default"></div>                
+            
             </div>        
         </section>        
         
@@ -209,12 +218,11 @@
         <section class="mainsec section3" id="faqs">
             <div class="well well-lg">
                 <h3><span id="nav-faqs"></span>Frequently Asked Questions</h3>
-                <h3><small>Everything you wanted to know (but were afraid to ask)</small></h3>
-                <div class="panel-group" id="faqs-accordian">
+                <div class="well panel-group" id="faqs-accordian">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h4 class="panel-title hvr-float-shadow">
-                                    <a class="collapsed" data-toggle="collapse" data-parent="#faqs-accordion" href="#faqs-collapseOne">1. What is HTML?</a>
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#faqs-accordion" href="#faqs-collapseOne">what...?</a>
                                 </h4>
                             </div>
                             <div id="faqs-collapseOne" class="panel-collapse collapse">
@@ -225,8 +233,8 @@
                         </div>
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h4 class="panel-title hvr-float-shadow">
-                                    <a class="collapsed" data-toggle="collapse" data-parent="#faqs-accordion" href="#faqs-collapseTwo">2. What is Bootstrap?</a>
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#faqs-accordion" href="#faqs-collapseTwo">why...?</a>
                                 </h4>
                             </div>
                             <div id="faqs-collapseTwo" class="panel-collapse collapse">
@@ -237,8 +245,8 @@
                         </div>
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h4 class="panel-title hvr-float-shadow">
-                                    <a class="collapsed" data-toggle="collapse" data-parent="#faqs-accordion" href="#faqs-collapseThree">3. What is CSS?</a>
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#faqs-accordion" href="#faqs-collapseThree">how...?</a>
                                 </h4>
                             </div>
                             <div id="faqs-collapseThree" class="panel-collapse collapse">
@@ -248,45 +256,52 @@
                             </div>
                         </div>
                     </div>
-                <p><a class="btn btn-primary btn-lg">More Questions?</a></p>
+                <p><a class="btn btn-primary btn-lg">More Questions?</a></p>                
             </div>            
         </section>
         
         <section class="mainsec section4" id="about">
             <div class="well well-lg">
-                <h3><span id="nav-about"></span>About Me/ Contact</h3>
-                <h3><small>Who is this guy (and what's all this fuss about)</small></h3>
-                <p>Programmer, Mentor, Unschooler</p>
-                <p>IT/E&R exp, motivation to teach entrepreneurs programming, curr techstack, github-projects, medium-blogs, gitter-chat groups</p>
-
-                <p>Say hello, reach out to me, send me something to think over</p>
+                <h3><span id="nav-about"></span>About Me</h3>
+                <div class="well flexcont">
+                    <div class="well well-sm flexitem">
+                        <ul class="nav nav-tabs">
+                          <li class=""><a href="#past" data-toggle="tab" aria-expanded="true"><h5>Past</h5></a></li>
+                          <li class="active"><a href="#now" data-toggle="tab" aria-expanded="false"><h5>Now</h5></a></li>
+                          <li class=""><a href="#next" data-toggle="tab" aria-expanded="true"><h5>Next</h5></a></li>
+                        </ul>
+                        <div class="tab-content">
+                          <div class="tab-pane fade active in" id="past">
+                            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                          </div>
+                          <div class="tab-pane fade active" id="now">
+                            <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+                          </div>
+                          <div class="tab-pane fade active in" id="next">
+                            <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+                          </div>
+                        </div>                
+                    </div>                      
+                    <div class="well well-sm flexitem">
+                        <img src="../assets/pics/pp.png" height="280px" width="280px" alt="satenndrra profile photo">                          
+                    </div>
+                    <div class="well well-sm flexitem-s">
+<!-- facebook page/like plugin, customize the iframe here.. https://developers.facebook.com/docs/plugins/page-plugin-->
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsatenndrradotcom&tabs=timeline&width=190&height=70&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="190" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+<!-- facebook account/follow plugin, customize the iframe here.. https://developers.facebook.com/docs/plugins/follow-button-->
+                        <iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fsatenndrra&width=78&height=65&layout=box_count&size=large&show_faces=true&appId" width="78" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                        <a title="projects" class="st-icon-github st-multi-color" href="https://github.com/satenndrra" target="_blank"><span></span></a>                                  
+                        <a title="tweets" class="st-icon-twitter st-multi-color" href="https://twitter.com/satenndrra" target="_blank"><span></span></a>
+                        <a title="blogs" href="https://medium.com/@satenndrra" target="_blank">
+                            <img src="../assets/logo/medium.svg" height="33px" width="33px" alt="medium">                    
+                        </a>                            
+                    </div>
+                </div>
                 <button class="btn btn-success btn-lg">Contact Me</button>
             </div>        
         </section>
         
         <section>
-            <div class="well well-lg">
-                    <ul class="nav nav-tabs">
-                  <li class="active"><a href="#abc" data-toggle="tab" aria-expanded="false">abc</a></li>
-                  <li class=""><a href="#def" data-toggle="tab" aria-expanded="true">def</a></li>
-                  <li class=""><a href="#ghi" data-toggle="tab" aria-expanded="true">ghi</a></li>
-                  <li class=""><a href="#jkl" data-toggle="tab" aria-expanded="true">jkl</a></li>
-                </ul>
-                    <div id="myTabContent" class="tab-content">
-                  <div class="tab-pane fade" id="abc">
-                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
-                  </div>
-                  <div class="tab-pane fade active in" id="def">
-                    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
-                  </div>
-                  <div class="tab-pane fade active in" id="ghi">
-                    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
-                  </div>
-                  <div class="tab-pane fade active in" id="jkl">
-                    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
-                  </div>
-                </div>                
-                </div>            
             
             <br>
             <br>
@@ -315,20 +330,6 @@
                   <li class="list-group-item">Porta ac consectetur ac</li>
                   <li class="list-group-item">Vestibulum at eros</li>
                 </ul>                    
-            </div>
-            
-            <br>
-            <br>
-            <div class="flexcont">
-                <div class="well flexitem">
-                    Regular Well
-                </div>
-                <div class="well well-sm flexitem">
-                    Small Well
-                </div>
-                <div class="well well-lg flexitem">
-                    Large Well
-                </div>                       
             </div>
             
             <br>
