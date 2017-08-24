@@ -164,14 +164,6 @@ h1, h2, h3, h4, h5, h6, p{
     height: 300px;
     width: 300px;
 }
-.flexitem-s{
-    height: 150px;
-    width: 150px;
-}
-.flexitem-n{
-    height: 300px;
-    width: 100px;
-}
 
 /* media-query rules should come last so as to get overridden */
 
