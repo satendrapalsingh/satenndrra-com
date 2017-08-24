@@ -5,7 +5,7 @@
 $(function(){
 
     var typedBig= document.getElementById('typed-big');   // typewriter output for big screens
-    var typedSmall = document.getElementById('typed-small'); // typewriter output for smaller screens
+    var typedSmall= document.getElementById('typed-small');   // typewriter output for big screens
     
     var typewriter = new Typewriter(typedBig, {
         loop: true,
@@ -42,6 +42,7 @@ $(function(){
             .typeString("Own it.")
             .pauseFor(4000)                        
             .start();
+    
 });
 
 

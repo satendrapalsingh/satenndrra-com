@@ -156,16 +156,21 @@ h1, h2, h3, h4, h5, h6, p{
 
 .flexcont{
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
 }
+
 .flexitem{
     height: 300px;
     width: 300px;
 }
 .flexitem-s{
-    height: 200px;
-    width: 210px;
+    height: 150px;
+    width: 150px;
+}
+.flexitem-n{
+    height: 300px;
+    width: 100px;
 }
 
 /* media-query rules should come last so as to get overridden */
