@@ -100,6 +100,7 @@ a, u {
 /* main sections */
 
 .landing{
+    margin-top: -3vmax;
     margin-bottom: 5vmax;
 }
 
