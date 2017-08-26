@@ -80,7 +80,7 @@
             <div class="bgvid-overlay"></div>
             <div class="fullscbg">
                 <video class="fullscbgvid" id="bgvid" autoplay poster="../assets/pics/launch.jpg">
-<!--                    <source src="../assets/vids/launch.mp4" type="video/mp4"/>  -->    
+                    <source src="../assets/vids/launch.mp4" type="video/mp4"/>  
                 </video>
         </div>
         </section>
@@ -215,7 +215,7 @@
                                     <p><strong>Online</strong><small>: sat/sun | 0500-0800 hrs IST | Google Hangouts</small></p>
                                     <p><strong>Pre-Requisites</strong> <small>: laptop/ pc | internet</small></p>
                                 <div class="text-center">
-                                    <button class="btn btn-info ">Enroll / FreeClass</button> 
+                                    <button class="btn btn-info" data-toggle="modal" data-target="#modal-events">Enroll / FreeClass</button> 
                                 </div>
                             </div>
                         </div>                       
@@ -278,7 +278,7 @@
                                     <p><strong>Online</strong><small>: mon-fri | 0500-0800 hrs IST | Google Hangouts</small></p>
                                     <p><strong>Pre-Requisites</strong> <small>: Laptop/ PC | Internet | Attend at least one FreeClass session</small></p>
                                     <div class="text-center">
-                                        <button class="btn btn-success ">Enroll / Workshop</button> 
+                                        <button class="btn btn-success" data-toggle="modal" data-target="#modal-events">Enroll / Workshop</button> 
                                     </div>
                                 </div>
                             </div>                       
@@ -340,7 +340,7 @@
                                 <p><strong>Pre-requisites</strong><small>: On-Location Training Hall | Sufficient Seating Capacity | Projector | Internet Connection </small></p>
                                 <p><strong>NOTE</strong><small>: Additional expenses (travel, lodging, food) shall apply for workshops that need to be conducted in a city other than Bangalore</small></p>
                                     <div class="text-center">
-                                        <button class="btn btn-warning ">Request / Workshop</button> 
+                                        <button class="btn btn-warning" data-toggle="modal" data-target="#modal-request">Request / Workshop</button> 
                                     </div>
                             </div>
                         </div>                       
@@ -438,7 +438,7 @@
 <p><strong>FOR</strong> - Those who want to build and launch their own startup MVPs and apps</p>
 <p><strong>GOAL</strong> - Build and deploy a web/mobile/desktop app that allows your customers to register, login and access their dashboards (based on the satenndra.com app)</p>
 <p><strong>TECH</strong> - meteor, blaze, bootstrap, cordova, electron, rest API</p>
-<p><strong>SKILLS</strong> - How to build javascript client/server apps, How to create web/mobile/desktop apps from a single code b </p>
+<p><strong>SKILLS</strong> - How to build javascript client/server apps, How to create web/mobile/desktop apps from a single code base</p>
 
                             </div>
                         </div>
@@ -489,7 +489,7 @@
                         </div>
                     </div>
                     <br>
-                    <button class="btn btn-primary">More Questions?</button>   
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#modal-faqs">More Questions?</button>   
                 </div>
                                    
                 </div>
@@ -540,7 +540,7 @@
                                 <a href="https://plus.google.com/116595111146561748932" target="_blank">
                                     <img src="https://png.icons8.com/google-plus/color/75" title="google+" width="75" height="75">
                                 </a>
-                                <button class="btn btn-primary btn-lg ">Send Me A Message</button>                                 
+                                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-contact">Contact Me</button>                                 
                             </div>
                         </div>  
                       
@@ -553,21 +553,97 @@
         <footer class="footer navbar-fixed-bottom" id="foot">
             <div class="fluid-container">
                 <div class="row">
-                    <div class="col-xs-5">
+                    
+                    <div class="col-xs-12 text-center">
+                    <a class="hvr-grow" href="#">
+                        <img src="/assets/ico/favicon-32x32.png" alt="satenndrra logo">
+                    </a>
+                    </div>                      
+<!--                    
+                    <div class="col-xs-4">
                         <p class="hidden-xs col-sm-* col-md-* col-lg-* text-center">Terms of Service</p>
                         <p class="col-xs-* hidden-sm hidden-md hidden-lg text-left"><small>Terms of Service</small></p>
                     </div>
-                    <div class="col-xs-2 text-center">
-                        <p>logo/CC</p>
+
+                    <div class="col-xs-4 text-center">
+                        <p class="hidden-xs col-sm-* col-md-* col-lg-* text-center">Satenndrra, CC-BY-SA</p>
+                        <p class="col-xs-* hidden-sm hidden-md hidden-lg text-right"><small>Satenndrra, CC-BY-SA</small></p>
                     </div>     
-                    <div class="col-xs-5">
-                        <p class="hidden-xs col-sm-* col-md-* col-lg-* text-center">Privacy Policy</p>
+                  
+                    <div class="col-xs-4">
+                        <p class="hidden-xs col-sm-* col-md-* col-lg-* text-center">Privacy Policy</p> 
                         <p class="col-xs-* hidden-sm hidden-md hidden-lg text-right"><small>Privacy Policy</small></p>
                     </div>
+-->                    
                 </div>
             </div>
         </footer>
 
+<!-- Modal for EventsHigh ticketing iframe-->
+    <div id="modal-events" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Enroll for Upcoming FreeClass Sessions & Workshops</h4>
+                </div>
+                    <div class="modal-body">
+                        <script type='text/javascript'>
+                          window.addEventListener('message', function(e) { if (e.origin.includes('https://www.eventshigh.com')) { if (e.data.indexOf('height:') === 0) { var elem = document.getElementById('ehbrwid'); elem.height = ''; elem.height = e.data.substring(7) + 'px'; } } }, false);
+                        </script>
+                        <iframe id='ehbrwid' style='width: 100%; border: 0px;' src='https://www.eventshigh.com/orwid/satenndrra%40gmail.com'>
+                          Your browser does not support iframe. Still living in old age browser?
+                        </iframe>
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- Modal for EventsHigh ticketing iframe-->
+    <div id="modal-contact" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                    <div class="modal-body">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfM7N8mxzldXN-lF-pjZNLCjXv1Jln1OsNOwEgpilILWOKiPg/viewform?embedded=true" width="580" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Modal for EventsHigh ticketing iframe-->
+    <div id="modal-faqs" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                    <div class="modal-body">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe10MYagyvPHKBy_YkUMSob8ip2umxF9vT5uqZAYekOVCvQ9Q/viewform?embedded=true" width="580" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Modal for EventsHigh ticketing iframe-->
+    <div id="modal-request" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                    <div class="modal-body">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfs2f_n14Jsk8PagICpl8OTHYsnGSUw3xJ5nI5q_g-nTnIw6Q/viewform?embedded=true" width="580" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                    </div>
+            </div>
+        </div>
+    </div>
+        
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js"></script>
