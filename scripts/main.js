@@ -33,7 +33,6 @@ $(function(){
     });
 
         typewriter
-            .pauseFor(4000)         
             .typeString("Code it...")
             .pauseFor(4000)
             .deleteChars(10)

@@ -216,7 +216,7 @@
                                     <p><strong>Online</strong><small>: sat/sun | 0500-0800 hrs IST | Google Hangouts</small></p>
                                     <p><strong>Pre-Requisites</strong> <small>: laptop/ pc | internet</small></p>
                                 <div class="text-center">
-                                    <button class="btn btn-info" data-toggle="modal" data-target="#modal-events">Enroll / FreeClass</button> 
+                                    <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#modal-events">Enroll / FreeClass</button>
                                 </div>
                             </div>
                         </div>                       
@@ -279,7 +279,7 @@
                                     <p><strong>Online</strong><small>: mon-fri | 0500-0800 hrs IST | Google Hangouts</small></p>
                                     <p><strong>Pre-Requisites</strong> <small>: Laptop/ PC | Internet | Attend at least one FreeClass session</small></p>
                                     <div class="text-center">
-                                        <button class="btn btn-success" data-toggle="modal" data-target="#modal-events">Enroll / Workshop</button> 
+                                        <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#modal-events">Enroll / Workshop</button>
                                     </div>
                                 </div>
                             </div>                       
@@ -341,7 +341,7 @@
                                 <p><strong>Pre-requisites</strong><small>: On-Location Training Hall | Sufficient Seating Capacity | Projector | Internet Connection </small></p>
                                 <p><strong>NOTE</strong><small>: Additional expenses (travel, lodging, food) shall apply for workshops that need to be conducted in a city other than Bangalore</small></p>
                                     <div class="text-center">
-                                        <button class="btn btn-warning" data-toggle="modal" data-target="#modal-request">Request / Workshop</button> 
+                                        <button class="btn btn-warning btn-lg" data-toggle="modal" data-target="#modal-request">Request / Workshop</button> 
                                     </div>
                             </div>
                         </div>                       
@@ -492,7 +492,6 @@
                     <br>
                     <button class="btn btn-primary" data-toggle="modal" data-target="#modal-faqs">More Questions?</button>   
                 </div>
-                                   
                 </div>
             </div>            
         </section>
@@ -554,17 +553,23 @@
         <footer class="footer navbar-fixed-bottom" id="foot">
             <div class="fluid-container">
                 <div class="row">
-                    
+
                     <div class="col-xs-12 text-center">
-                    <a class="hvr-grow" href="#">
-                        <img src="/assets/ico/favicon-32x32.png" alt="satenndrra logo">
-                    </a>
-                    </div>                      
+                        <button class="btn btn-success btn-lg hidden-xs col-sm-* col-md-* col-lg-*" data-toggle="modal" data-target="#modal-events">Enroll</button>
+                        <button class="btn btn-success col-xs-* hidden-sm hidden-md hidden-lg" data-toggle="modal" data-target="#modal-events">Enroll</button>
+                    </div>       
+                    
 <!--                    
                     <div class="col-xs-4">
                         <p class="hidden-xs col-sm-* col-md-* col-lg-* text-center">Terms of Service</p>
                         <p class="col-xs-* hidden-sm hidden-md hidden-lg text-left"><small>Terms of Service</small></p>
                     </div>
+
+                    <div class="col-xs-12 text-center">
+                        <a class="hvr-grow" href="#">
+                            <img src="/assets/ico/favicon-32x32.png" alt="satenndrra logo">
+                        </a>
+                    </div>      
 
                     <div class="col-xs-4 text-center">
                         <p class="hidden-xs col-sm-* col-md-* col-lg-* text-center">Satenndrra, CC-BY-SA</p>
@@ -580,13 +585,13 @@
             </div>
         </footer>
 
-<!-- Modal for EventsHigh ticketing iframe-->
+<!-- Modal for EventsHigh Event Ticketing iframe-->
     <div id="modal-events" class="modal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">Enroll for Upcoming FreeClass Sessions & Workshops</h4>
+                    <h4 class="modal-title text-center">Enroll for Upcoming Workshops</h4>
                 </div>
                     <div class="modal-body">
                         <script type='text/javascript'>
@@ -596,11 +601,14 @@
                           Your browser does not support iframe. Still living in old age browser?
                         </iframe>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>                      
             </div>
         </div>
     </div>
     
-<!-- Modal for EventsHigh ticketing iframe-->
+<!-- Modal for Contact Me form google-forms iframe-->
     <div id="modal-contact" class="modal">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -609,13 +617,16 @@
                     <h4 class="modal-title"></h4>
                 </div>
                     <div class="modal-body">
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfM7N8mxzldXN-lF-pjZNLCjXv1Jln1OsNOwEgpilILWOKiPg/viewform?embedded=true" width="580" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfM7N8mxzldXN-lF-pjZNLCjXv1Jln1OsNOwEgpilILWOKiPg/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
                     </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>                    
             </div>
         </div>
     </div>
 
-<!-- Modal for EventsHigh ticketing iframe-->
+<!-- Modal for More Questions google-forms iframe-->
     <div id="modal-faqs" class="modal">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -624,13 +635,16 @@
                     <h4 class="modal-title"></h4>
                 </div>
                     <div class="modal-body">
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe10MYagyvPHKBy_YkUMSob8ip2umxF9vT5uqZAYekOVCvQ9Q/viewform?embedded=true" width="580" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe10MYagyvPHKBy_YkUMSob8ip2umxF9vT5uqZAYekOVCvQ9Q/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>                         
             </div>
         </div>
     </div>
 
-<!-- Modal for EventsHigh ticketing iframe-->
+<!-- Modal for Request Workshop google-forms iframe-->
     <div id="modal-request" class="modal">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -639,8 +653,11 @@
                     <h4 class="modal-title"></h4>
                 </div>
                     <div class="modal-body">
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfs2f_n14Jsk8PagICpl8OTHYsnGSUw3xJ5nI5q_g-nTnIw6Q/viewform?embedded=true" width="580" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfs2f_n14Jsk8PagICpl8OTHYsnGSUw3xJ5nI5q_g-nTnIw6Q/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
                     </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>                         
             </div>
         </div>
     </div>
