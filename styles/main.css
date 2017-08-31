@@ -48,7 +48,9 @@ a, u {
 .dummyrow{
     height: 4vh;
 }
-
+.dummyrowbig{
+    height: 50vh;
+}
 
 /* accordian buttons */
 .panel-group .panel-heading a:before {
