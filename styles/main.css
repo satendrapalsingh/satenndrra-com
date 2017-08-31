@@ -4,7 +4,6 @@ html, body{
     margin: 0;
     height: 100%;
     width: 100%;
-    padding-top: 8vmax;
     font-family: Verdana !important;
 }
 
@@ -21,132 +20,85 @@ a, u {
     color: #666666;
 }
 
-#mynav, #foot{
-    color: #BDBDBD;
-    background-color: #222222;
-    font-family: Verdana;
-}
+/* background video elements */
 
-.tagline{
-        color: #BDBDBD;
-        font-family: Verdana;
+.bg-elements{
+    overflow: hidden;    
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
 }
-
-.nav.navbar-nav.navbar-right li a {
-    color: #BDBDBD;
-}
-
-.icon-bar {
-   background-color: #BDBDBD !important;
-}
-
-/* background video */
 
 .bgvid-overlay{
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: -1;
 }
 
 .fullscbg{
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
     z-index: -100;
-    
 }
 
 .fullscbg::before{
     content:"";
-    position:absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -100;
 }
 
-.fullscbgvid{
-    position:absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: -6vmax;
-    width: 112%;
-    height: 112%;
-}
-
-
-/* appropriately positioned h4/span anchor to offset fixed-navbar height and to prevent hiding of the navigated-to-content */
-
-.mainsec h3{
-    position: relative;
-}
-.mainsec h3 span{
-    position: absolute;
-    top: -100px;
-}
-
-.panel-title a{
-    position: relative;
-}
-.panel-title a span{
-    position: absolute;
-    top: -100px;
-}
-
-/* main sections */
-
-.landing{
-    margin-top: -3vmax;
-    margin-bottom: 5vmax;
-}
-
-h1, h2, h3, h4, h5, h6, p{
-    color: #E0E0E0;
-}
-
-.mainsec{
-    padding: 1vmax 0 1vmax 0;    
-}
-
-/* dummy section to scale up landing-text-spacing according to viewport size*/
+/* dummy section for responsive spacing */
 .dummyrow{
     height: 4vh;
 }
 
-.section1{
+
+
+/* expanders styles and css animation */
+
+.expander {
+    background-color: #218D9B;
+    height: 100px;
+    width: 100px;
+    z-index: 1;
 }
 
-.section2{
+.invisible{
+    display: none;    
 }
 
-.section3{
+.transform {
+    transition: all 2s ease;
 }
 
-.section4{
-    margin-bottom: 30px;
+.transform-active {
+    overflow-y: auto;    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #45CEE0;
+}
+
+.appear{
+    animation: fadeIn 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+.appear:hover {
+    background-color: #000000;
+}
+
+@keyframes fadeIn{
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:0.6;
+        visibility: visible;
+    }
 }
 
 
-/* scrolldown arrow */
-
-.arrowdiv{
-    text-align: center;
-    margin: 8% 0;
-}
-
-/* panels, lists & accordians */
-
-/* plus-minus symbol for accordians */
+/* accordian elements */
 .panel-group .panel-heading a:before {
     font-family: FontAwesome;
     content: "\f146";        /* fontawesome minus-square icon unicode*/
@@ -159,22 +111,9 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 
-/* flexbox */
-
-.flexcont{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
-
-.flexitem{
-    height: 300px;
-    width: 300px;
-}
-
 /* media-query rules should come last so as to get overridden */
 
-/* play video only for ipad landscape-mode (width 1023px) and larger screens, fall back to video poster-image for smaller screens*/
+/* show bg-image/ don't play video for smaller screens */
 @media (max-width: 1023px){
     .fullscbg{
         background: url('../assets/pics/launch.jpg');
@@ -188,19 +127,7 @@ h1, h2, h3, h4, h5, h6, p{
     }
 }
 
-/* make navbar text scale for ipad portrait and landscape modes */
-@media (min-width: 768px) and (max-width: 1024px){
-    .navtext{
-        font-size: 2vmax;    
-    }
-}
-@media (min-width: 1025px){
-    .navtext{
-        font-size: 3.5vmin;
-    }
-}
-
-/* adjust landing section spacing for small-screen landscape modes by setting height/width to 100% only for all portrait and large landscape modes */
+/* responsive spacing */
 @media (min-width: 768px), (max-width: 767px) and (orientation : portrait){
     .landing{
         height: 100%;

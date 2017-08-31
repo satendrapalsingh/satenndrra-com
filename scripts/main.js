@@ -1,8 +1,19 @@
-// main javscript code
+// main javascript code
 
-// typewriter.js function reference: https://safi.me.uk/typewriterjs/
+// function to toggle the expanders and load fill-content    
+    function toggleMe(){
+      var expander = document.getElementById("box1");
+      var expheader  = document.getElementById("box1-header");
+      var expcontent  = document.getElementById("box1-content");
+      
+      expander.classList.toggle("transform-active");
+      expheader.classList.toggle("invisible");
+      expcontent.classList.toggle("invisible");
+    }  
 
 $(function(){
+    
+// typewriter.js function reference: https://safi.me.uk/typewriterjs/    
 
     var typedBig= document.getElementById('typed-big');   // typewriter output for big screens
     var typedSmall= document.getElementById('typed-small');   // typewriter output for big screens
@@ -42,6 +53,7 @@ $(function(){
             .typeString("Own it.")
             .pauseFor(4000)                        
             .start();
+
     
 });
 

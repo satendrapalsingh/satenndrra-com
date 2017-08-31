@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Entrepreneurs Can Code</title>
+        <title>App Dev for Entrepreneurs</title>
 
 <!-- favicons for browser-tab, generated at http://www.favicon-generator.org/ -->
         <link rel="apple-touch-icon" sizes="57x57" href="assets/ico/apple-icon-57x57.png">
@@ -35,57 +35,26 @@
 
     </head>
 
-    <body data-spy="scroll" data-target="#mynav" data-offset="50">
-        <nav class="navbar navbar-default navbar-fixed-top" id="mynav">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand col-xs-* hidden-sm hidden-md hidden-lg hvr-grow" href="#">
-                        <img src="/assets/ico/favicon-32x32.png" alt="satenndrra logo">
-                    </a>
-                    <a class="navbar-brand hidden-xs col-sm-* col-md-* col-lg-* hvr-grow" href="#">
-                        <img src="/assets/logo/logox.png" alt="satenndrra logo">
-                    </a>  
-                    <h5 class="text-center col-xs-* hidden-sm hidden-md hidden-lg tagline"><strong>Entrepreneurs Can Code</strong></h5>                      
-                    <h6 class="text-center hidden-xs col-sm-x col-md-x col-lg-x tagline"><strong>Entrepreneurs Can Code</strong></h6>
-                </div>
-                <div class="collapse navbar-collapse">
-                    
-<!-- uncollapsed large-screen-navbar version with scroll-spy activated  -->                    
-                    <ul class="nav navbar-nav navbar-right hidden-xs col-sm-* col-md-* col-lg-*">
-                        <li class="navtext "><a href="#nav-free">FreeClass</a></li>
-                        <li class="navtext"><a href="#nav-paid">Workshops</a></li>
-                        <li class="navtext"><a href="#nav-orgs">On-Site</a></li>
-                        <li class="navtext"><a href="#nav-faqs">FAQs</a></li>
-                        <li class="navtext"><a href="#nav-about">About</a></li>
-                    </ul>
-<!-- separate mobile-navbar version with menu-toggle on navlink click (as this disables scroll spy)  -->
-                    <ul class="nav navbar-nav navbar-right col-xs-* hidden-sm hidden-md hidden-lg">
-                        <li class="navtext"><a data-toggle="collapse" data-target=".navbar-collapse" href="#nav-free">FreeClass</a></li>
-                        <li class="navtext"><a data-toggle="collapse" data-target=".navbar-collapse" href="#nav-paid">Workshops</a></li>
-                        <li class="navtext"><a data-toggle="collapse" data-target=".navbar-collapse" href="#nav-orgs">On-Site</a></li>
-                        <li class="navtext"><a data-toggle="collapse" data-target=".navbar-collapse" href="#nav-faqs">FAQs</a></li>
-                        <li class="navtext"><a data-toggle="collapse" data-target=".navbar-collapse" href="#nav-about">About</a></li>
-                    </ul>
-                    
-                </div>
-            </div>
-        </nav>
+    <body>
         
         <section class="" id="fullbg">
-            <div class="bgvid-overlay"></div>
-            <div class="fullscbg">
-                <video class="fullscbgvid" id="bgvid" autoplay poster="../assets/pics/launch.jpg">
+            <div class="bg-elements bgvid-overlay"></div>
+            <div class="bg-elements fullscbg">
+                <video class="bg-elements fullscbgvid" id="bgvid" autoplay poster="../assets/pics/launch.jpg">
                     <source src="../assets/vids/launch.mp4" type="video/mp4"/>  
                 </video>
         </div>
         </section>
+    
         <section class="landing" id="land">
+<!-- top logo -->                        
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <img src="/assets/ico/favicon-96x96.png" alt="satenndrra logo">
+                    </div>
+                </div>
+            </div>
 <!-- landing text layout for larger screens-->            
             <div class="container-fluid hidden-xs col-sm-* col-md-* col-lg-*">
                 <div class="row">
@@ -162,429 +131,42 @@
                     </div>                    
                 </div>                   
             </div>
-        </section>
-        
-        <section class="mainsec section1" id="free">
-            <div class="well well-lg">
-                <h3><span id="nav-free"></span>FreeClass <small>Sessions</small></h3>
-                <div class="well flexcont">
-                    <div class="well well-sm flexitem">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <p class="panel-title text-center">What's a FreeClass</p>
-                            </div>
-                            <div class="panel-body">
-                                <ul class="list-group">
-                                    <li class="list-group-item">Free 2-day coding sessions</li>
-                                    <li class="list-group-item">No prior coding exp. needed</li>
-                                    <li class="list-group-item">Write your first program!</li>                                
-                                </ul>
-                                <div class="text-center">
-                                    <a href="#faqs1" data-toggle="collapse" data-target="#faqs-collapse1">
-                                        <button class="btn btn-primary">More Info</button>                                                                                 
-                                    </a>
-                                </div> 
-                            </div>
-                        </div>  
-                    </div>                    
-                    <div class="well well-sm flexitem">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <p class="panel-title text-center">What'll You Learn</p>
-                            </div>
-                            <div class="panel-body">
-                                <ul class="list-group">
-                                  <li class="list-group-item">Coding with Javascript</li>
-                                  <li class="list-group-item">How the web/ internet works</li>
-                                  <li class="list-group-item">Basic software development</li>                                  
-                                </ul>   
-                                <div class="text-center">
-                                    <a href="#faqs2" data-toggle="collapse" data-target="#faqs-collapse2">
-                                        <button class="btn btn-primary">More Info</button>                                                                                        
-                                    </a>
-                                </div>                                
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="well well-sm flexitem">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <p class="panel-title text-center">Upcoming Sessions</p>
-                            </div>
-                            <div class="panel-body">
-                                    <p><strong>Offline</strong><small>: sat/sun | 1500-1800 hrs IST | J.P. Nagar (Bangalore)</small></p>
-                                    <p><strong>Online</strong><small>: sat/sun | 0500-0800 hrs IST | Google Hangouts</small></p>
-                                    <p><strong>Pre-Requisites</strong> <small>: laptop/ pc | internet</small></p>
-                                <div class="text-center">
-                                    <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#modal-events">Enroll / FreeClass</button>
-                                </div>
-                            </div>
-                        </div>                       
-                    </div>
-                </div>
-            </div>        
-        </section>        
-        
-        <section class="mainsec section2" id="paid">
-            <header>
-                <div class="well well-lg">
-                    <h3><span id="nav-paid"></span>Workshops <small>Offered</small></h3>
-                    <div class="well flexcont">
-                        <div class="well well-sm flexitem">
-                            <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                    <p class="panel-title text-center">Workshop Modules</p>
-                                </div>
-                                <div class="panel-body">
-                                    <ul class="list-group">
-                                          <li class="list-group-item"><strong>Statick</strong><small> - Build Your Own Website</small></li>
-                                          <li class="list-group-item hidden-xs col-sm-* col-md-* col-lg-*"><strong>Softwear</strong><small> - Software Dev. & Proj. Management for Entrepreneurs</small></li>                                          
-                                          <li class="list-group-item col-xs-* hidden-sm hidden-md hidden-lg"><strong>Softwear</strong><small> - Learn Software Dev. Basics</small></li>
-                                          <li class="list-group-item"><strong>Meteorik</strong><small> - Build Your Own App</small></li>
-                                    </ul> 
-                                    <div class="text-center">
-                                        <a href="#faqs3" data-toggle="collapse" data-target="#faqs-collapse3">
-                                            <button class="btn btn-primary">More Info</button>                                                                                        
-                                        </a>
-                                    </div>                                 
-                                </div>                        
-                            </div> 
-                        </div>                        
-                        <div class="well well-sm flexitem">
-                            <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                    <p class="panel-title text-center">What You Get</p>
-                                </div>
-                                <div class="panel-body">
-                                    <ul class="list-group">
-                                          <li class="list-group-item">5-day/15-hrs class sessions</li>
-                                          <li class="list-group-item">C9 web-IDE student account</li>
-                                          <li class="list-group-item">Post-workshop support via chat</li>                                  
-                                    </ul> 
-                                    <div class="text-center">
-                                        <a href="#faqs4" data-toggle="collapse" data-target="#faqs-collapse4">
-                                            <button class="btn btn-primary">More Info</button>                                                                                        
-                                        </a>
-                                    </div>                                 
-                                </div>
-                            </div>  
-                        </div>                    
-                        <div class="well well-sm flexitem">
-                            <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                    <p class="panel-title text-center">Upcoming Workshops</p>
-                                </div>
-                                <div class="panel-body">
-                                    <p><strong>Offline</strong><small>: mon-fri | 1500-1800 hrs IST | J.P. Nagar (Bangalore)</small></p>
-                                    <p><strong>Online</strong><small>: mon-fri | 0500-0800 hrs IST | Google Hangouts</small></p>
-                                    <p><strong>Pre-Requisites</strong> <small>: Laptop/ PC | Internet | Attend at least one FreeClass session</small></p>
-                                    <div class="text-center">
-                                        <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#modal-events">Enroll / Workshop</button>
-                                    </div>
-                                </div>
-                            </div>                       
-                        </div>
-                    </div>                    
-                </div>
-            </header>     
-
-        </section>
-        
-        <section class="mainsec section1" id="orgs">
-            <div class="well well-lg">
-                <h3><span id="nav-orgs"></span>On-Site <small>Workshops</small></h3>
-                <div class="well flexcont">
-                    <div class="well well-sm flexitem">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <p class="panel-title text-center">Workshops For</p>
-                            </div>
-                            <div class="panel-body">
-                                <ul class="list-group">
-                                  <li class="list-group-item">Entrepreneur Clubs & Orgs.</li>
-                                  <li class="list-group-item">Startup Teams, Incubators & Accelerators</li>
-                                  <li class="list-group-item">MBA Colleges</li>
-                                </ul> 
-                                <div class="text-center">
-                                    <a href="#faqs5" data-toggle="collapse" data-target="#faqs-collapse5">
-                                        <button class="btn btn-primary">More Info</button>                                                                                        
-                                    </a>
-                                </div>                                 
-                            </div>
-                        </div>  
-                    </div>                    
-                    <div class="well well-sm flexitem">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <p class="panel-title text-center">Customize Modules</p>
-                            </div>
-                            <div class="panel-body">
-                                <ul class="list-group">
-                                  <li class="list-group-item">Add new topics to <a href="#nav-paid">standard</a> modules</li>
-                                  <li class="list-group-item">Modify module scope/ depth</li>
-                                  <li class="list-group-item">Combine different modules</li>                                  
-                                </ul>    
-                                    <div class="text-center">
-                                        <a href="#faqs6" data-toggle="collapse" data-target="#faqs-collapse6">
-                                            <button class="btn btn-primary">More Info</button>                                                                                        
-                                        </a>
-                                    </div>                                 
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="well well-sm flexitem">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <p class="panel-title text-center">Request Workshop</p>
-                            </div>
-                            <div class="panel-body">
-                                <p><strong>Pre-requisites</strong><small>: On-Location Training Hall | Sufficient Seating Capacity | Projector | Internet Connection </small></p>
-                                <p><strong>NOTE</strong><small>: Additional expenses (travel, lodging, food) shall apply for workshops that need to be conducted in a city other than Bangalore</small></p>
-                                    <div class="text-center">
-                                        <button class="btn btn-warning btn-lg" data-toggle="modal" data-target="#modal-request">Request / Workshop</button> 
-                                    </div>
-                            </div>
-                        </div>                       
-                    </div>
-                </div>                
-            </div>        
-        </section>          
-        
-        <section class="mainsec section3" id="faqs">
-            <div class="well well-lg">
-                <h3><span id="nav-faqs"></span>FAQs <small>Answered</small></h3>
-                <div class="well well-sm panel-group" id="faqs-accordion">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a class="collapsed" data-toggle="collapse" data-parent="#faqs-accordion" href="#faqs-collapseA">What do you mean by accessible programming?</a>
-                            </h4>
-                        </div>
-                        <div id="faqs-collapseA" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <p>Programming is usually intimidating to a lot of beginners and non-technical folks. My goal is to make programming accessible - easy to approach and fun to learn.</p>
-                                <p>And, yes, it can be done. Even if you've never programmed before. Even if you feel you are not that good with maths or science.</p>
-                                <p>Just like everybody can learn to read or write; everybody can learn to code (and get better with practice).</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a class="collapsed" data-toggle="collapse" data-parent="#faqs-accordion" href="#faqs-collapseB">I am an entrepreneur. Should I learn how to code?</a>
-                            </h4>
-                        </div>
-                        <div id="faqs-collapseB" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <p>If you are a solopreneuer/ entrepreneur/ business-owner, then you should definitely learn how to code. At least build and control your own business website (start with workshop/STATICK</a>).</p>
-                                <p>If you want to build your own tech-startup or app, then you obviously need to learn how to code. Even if it's just enough to launch the initial MVP/ prototype (launching soon workshop/METEORIK).</p>
-                                <p>If you are an entrepreneur/ founder/ product manager who works with technical teams or software freelancers, you should learn the basics of software development. This will help you communicate better with technical team (check out  workshop/SOFTWEAR).</p>
-                                <p>In any case, if you're even a little bit curious about programming, you should definitely drop in for my FreeClass sessions. These sessions are conducted every weekend, 3hrs/day, both online/offline.</p>
-                                <p></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a class="collapsed" data-toggle="collapse" data-parent="#faqs-accordion" href="#faqs-collapse1"><span id="faqs1"></span>What's a FreeClass and who should enroll?</a>
-                            </h4>
-                        </div>
-                        <div id="faqs-collapse1" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <p>FreeClass sessions are free weekend coding sessions (3hrs each sat/sun) for non-technical beginners, creatives and entrepreneurs who want to get started with programming.</p>
-                                <p>These sessions are designed to introduce you to programming, sofware development and web development with minimal friction.</p>
-                                <p>You should enroll if you have never coded or programmed before and have been wanting to start but didn't know how.</p>
-                                <p>Each weekend session-pair (saturday/sunday) is stand-alone and self-sufficient but also unique. You can attend multiple weekends if needed.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a class="collapsed" data-toggle="collapse" data-parent="#faqs-accordion" href="#faqs-collapse2"><span id="faqs2"></span>What exactly will I learn in a FreeClass?</a>
-                            </h4>
-                        </div>
-                        <div id="faqs-collapse2" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <p>You will begin your coding journey using basic html, css, javascript and number of other beginner-friendly programming-languages/ tools like Scratch, Snap!, Bubble, Webflow etc.</p>
-                                <p>Future sessions may also include playing around with tools that allow one to make art (music, stories, visuals etc) by writing code like processing.js/p5.js etc.</p>
-                                <p>Everything we do in these sessions will be with the goal of giving you and intuitive understanding of coding concepts like variables, control-flow, databases, algorithms, data-structures etc.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a class="collapsed" data-toggle="collapse" data-parent="#faqs-accordion" href="#faqs-collapse3"><span id="faqs3"></span>What workshops are available, and which one should I enroll in ?</a>
-                            </h4>
-                        </div>
-                        <div id="faqs-collapse3" class="panel-collapse collapse">
-                            <div class="panel-body">
-<h4><small>NOTE - At least one FreeClass attendance mandatory to enroll in any workshop.</small></h4>                                
-<br>
-<h4>1. Workshop/ STATICK</h4>
-<p><strong>FOR</strong> - Those solopreneurs, entrepreneurs & business-owners who want to build their own business (portfolio, sell events, sell products)</p>
-<p><strong>GOAL</strong> - Build and deploy your own business website to sell your own events ticketed-events & digital/physical goods (using satenndrra.com as a website template)</p>
-<p><strong>TECH</strong> - html, css, javascript, jquery, bootstrap, aws-s3, 3rd party services (google-forms, eventshigh, instamojo)</p>
-<p><strong>SKILLS</strong> - How to build websites using bootstrap templates, How to use javascript/jquery pugins, How to use  3rd party services for building fully functional websites</p>
-<br>
-<h4>02. Workshop/ SOFTWEAR</h4> 
-<p><strong>FOR</strong> - Those entrepreneurs, founders & product managers who want to learn just enough software development & project management to be able to work better with software teams and freelancers</p>
-<p><strong>GOAL</strong> - Run a project execution simulation where participants act as business clients providing requirements/test criteria, reviewing effort estimation, validating deliverables & managing the whole project (using satenndrra.com website as a project case study)</p>
-<p><strong>TECH</strong> - lean startup principles, lean software development</p>
-<p><strong>SKILLS</strong> - Software development & project management fundamentals, Specifying requirements/ test-criteria, Estimating software effort, Validating software deliverables</p>
-<br>
-<h4>03. Workshop/ METEORIK</h4>
-<p><strong>FOR</strong> - Those entrepreneurs & startup founders who want to build and launch their own startup MVPs and apps</p>
-<p><strong>GOAL</strong> - Build and deploy a web/mobile/desktop app that allows your customers to register, login and access their dashboards (based on the satenndra.com app)</p>
-<p><strong>TECH</strong> - meteor, blaze, bootstrap, cordova, electron, rest API</p>
-<p><strong>SKILLS</strong> - How to build javascript client/server apps, How to create web/mobile/desktop apps from a single code base</p>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a class="collapsed" data-toggle="collapse" data-parent="#faqs-accordion" href="#faqs-collapse4"><span id="faqs4"></span>How is the workshop conducted?</a>
-                            </h4>
-                        </div>
-                        <div id="faqs-collapse4" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <p>Once you enroll/ pay for a workshop you'll receive venue details (offline slots) or hangout-invite (online slots).</p>
-                                <p>Before starting the workshop I will give you a c9 student account. You'll also need to join the gitter-chat room and the facebook-group.</p>
-                                <p>The 3-hrs sessions will be very hands-on. At the end of the session you will have some code-assignments to do before you come for the next session (keep aside 2-3 hours/day for this).</p>
-                                <p>After the workshop is over you get to retain the c9 student account and can reach out to me on gitter-chat/ facebook-group for post-workshop support.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a class="collapsed" data-toggle="collapse" data-parent="#faqs-accordion" href="#faqs-collapse5"><span id="faqs5"></span>What are On-Site Workshops and who can request these?</a>
-                            </h4>
-                        </div>
-                        <div id="faqs-collapse5" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <p>On-Site workshops are customized workshops that can be requested to be held at a specific location.</p> 
-                                <p>You can request these workshops if you are an organization  (entrepreneur/ startup club, associations, incubators, accelerators etc) or an academic body (MBA colleges, engineering colleges, universities etc).</p>
-                                <p>Use the Request / Workshop button to send me your requirements and I will get back to you with a customized workshop plan.</p>
-                                <p>I conduct these workshops both in Bangalore as well as other cities (this subject to additional expenses of travel, food, lodging).</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a class="collapsed" data-toggle="collapse" data-parent="#faqs-accordion" href="#faqs-collapse6"><span id="faqs6"></span>How can I customize an Onsite-Workshop for my organization?</a>
-                            </h4>
-                        </div>
-                        <div id="faqs-collapse6" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <p>You can customize the On-Site workshops for scope, duration & batch strength.</p>
-                                <p>Scope customizations involve adding/ removing topics to/from a standard workshop module, changing the intensity of the course (like very in-depth etc) and combining separate modules to create a full coding bootcamp (yes, I do those as well). </p>
-                                <p>Duration customization is linked to scope so this has to modified w.r.t the scope. Dates can be agreed upon based on mutual convenience.</p>
-                                <p>Batch Strength customizations are straight forward. I need a minimum of 10 members/students to conduct an On-Site session. The maximum I can train (without impacting workshop quality) is 30 in a batch.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <button class="btn btn-primary" data-toggle="modal" data-target="#modal-faqs">More Questions?</button>   
-                </div>
+<!-- expanders -->
+            <div class="expanders">
+                <div id="box1" class="expander appear transform">
+                  <button id="button" onClick="toggleMe();">toggle</button>
+                  <div id="box1-header" class="expheader">
+                      <h4>noCode with Bubble</h4>
+                  </div>                  
+                  <div id="box1-content" class="expcontent invisible">
+                      <p>The disabled fighter fought not only for his but other disabled doctor’s rights. He also brought into open the discrimination by UPSC which disallowed doctors with disability to apply for various Central Health Services (CHS) posts. He himself was rejected in 2011 but fought and was later allowed to appear for the interview.[2][3] In 2013, his application was again rejected when he highlighted that the same discrimination was also present for the other posts.[4] He was allowed to apply in a quick intervention.[5] His RTI revealed that doctors with disabilities are not considered eligible for specialist CHS posts in teaching, non-teaching as well as public health specialist cadres. Undeterred, he complained again and requested the health ministry to allow all eligible doctors with disability to apply for these posts. His single handed relentless fight for justice over four years ultimately forced Health Ministry to unlock 1,674 specialist central posts for disabled doctors.</p>
+                      <p>The disabled fighter fought not only for his but other disabled doctor’s rights. He also brought into open the discrimination by UPSC which disallowed doctors with disability to apply for various Central Health Services (CHS) posts. He himself was rejected in 2011 but fought and was later allowed to appear for the interview.[2][3] In 2013, his application was again rejected when he highlighted that the same discrimination was also present for the other posts.[4] He was allowed to apply in a quick intervention.[5] His RTI revealed that doctors with disabilities are not considered eligible for specialist CHS posts in teaching, non-teaching as well as public health specialist cadres. Undeterred, he complained again and requested the health ministry to allow all eligible doctors with disability to apply for these posts. His single handed relentless fight for justice over four years ultimately forced Health Ministry to unlock 1,674 specialist central posts for disabled doctors.</p>
+                      <p>The disabled fighter fought not only for his but other disabled doctor’s rights. He also brought into open the discrimination by UPSC which disallowed doctors with disability to apply for various Central Health Services (CHS) posts. He himself was rejected in 2011 but fought and was later allowed to appear for the interview.[2][3] In 2013, his application was again rejected when he highlighted that the same discrimination was also present for the other posts.[4] He was allowed to apply in a quick intervention.[5] His RTI revealed that doctors with disabilities are not considered eligible for specialist CHS posts in teaching, non-teaching as well as public health specialist cadres. Undeterred, he complained again and requested the health ministry to allow all eligible doctors with disability to apply for these posts. His single handed relentless fight for justice over four years ultimately forced Health Ministry to unlock 1,674 specialist central posts for disabled doctors.</p>
+                      <p>The disabled fighter fought not only for his but other disabled doctor’s rights. He also brought into open the discrimination by UPSC which disallowed doctors with disability to apply for various Central Health Services (CHS) posts. He himself was rejected in 2011 but fought and was later allowed to appear for the interview.[2][3] In 2013, his application was again rejected when he highlighted that the same discrimination was also present for the other posts.[4] He was allowed to apply in a quick intervention.[5] His RTI revealed that doctors with disabilities are not considered eligible for specialist CHS posts in teaching, non-teaching as well as public health specialist cadres. Undeterred, he complained again and requested the health ministry to allow all eligible doctors with disability to apply for these posts. His single handed relentless fight for justice over four years ultimately forced Health Ministry to unlock 1,674 specialist central posts for disabled doctors.</p>
+                      <p>The disabled fighter fought not only for his but other disabled doctor’s rights. He also brought into open the discrimination by UPSC which disallowed doctors with disability to apply for various Central Health Services (CHS) posts. He himself was rejected in 2011 but fought and was later allowed to appear for the interview.[2][3] In 2013, his application was again rejected when he highlighted that the same discrimination was also present for the other posts.[4] He was allowed to apply in a quick intervention.[5] His RTI revealed that doctors with disabilities are not considered eligible for specialist CHS posts in teaching, non-teaching as well as public health specialist cadres. Undeterred, he complained again and requested the health ministry to allow all eligible doctors with disability to apply for these posts. His single handed relentless fight for justice over four years ultimately forced Health Ministry to unlock 1,674 specialist central posts for disabled doctors.</p>
+                      <p>The disabled fighter fought not only for his but other disabled doctor’s rights. He also brought into open the discrimination by UPSC which disallowed doctors with disability to apply for various Central Health Services (CHS) posts. He himself was rejected in 2011 but fought and was later allowed to appear for the interview.[2][3] In 2013, his application was again rejected when he highlighted that the same discrimination was also present for the other posts.[4] He was allowed to apply in a quick intervention.[5] His RTI revealed that doctors with disabilities are not considered eligible for specialist CHS posts in teaching, non-teaching as well as public health specialist cadres. Undeterred, he complained again and requested the health ministry to allow all eligible doctors with disability to apply for these posts. His single handed relentless fight for justice over four years ultimately forced Health Ministry to unlock 1,674 specialist central posts for disabled doctors.</p>
+                      <p>The disabled fighter fought not only for his but other disabled doctor’s rights. He also brought into open the discrimination by UPSC which disallowed doctors with disability to apply for various Central Health Services (CHS) posts. He himself was rejected in 2011 but fought and was later allowed to appear for the interview.[2][3] In 2013, his application was again rejected when he highlighted that the same discrimination was also present for the other posts.[4] He was allowed to apply in a quick intervention.[5] His RTI revealed that doctors with disabilities are not considered eligible for specialist CHS posts in teaching, non-teaching as well as public health specialist cadres. Undeterred, he complained again and requested the health ministry to allow all eligible doctors with disability to apply for these posts. His single handed relentless fight for justice over four years ultimately forced Health Ministry to unlock 1,674 specialist central posts for disabled doctors.</p>
+                      <p>The disabled fighter fought not only for his but other disabled doctor’s rights. He also brought into open the discrimination by UPSC which disallowed doctors with disability to apply for various Central Health Services (CHS) posts. He himself was rejected in 2011 but fought and was later allowed to appear for the interview.[2][3] In 2013, his application was again rejected when he highlighted that the same discrimination was also present for the other posts.[4] He was allowed to apply in a quick intervention.[5] His RTI revealed that doctors with disabilities are not considered eligible for specialist CHS posts in teaching, non-teaching as well as public health specialist cadres. Undeterred, he complained again and requested the health ministry to allow all eligible doctors with disability to apply for these posts. His single handed relentless fight for justice over four years ultimately forced Health Ministry to unlock 1,674 specialist central posts for disabled doctors.</p>
+                      <p>The disabled fighter fought not only for his but other disabled doctor’s rights. He also brought into open the discrimination by UPSC which disallowed doctors with disability to apply for various Central Health Services (CHS) posts. He himself was rejected in 2011 but fought and was later allowed to appear for the interview.[2][3] In 2013, his application was again rejected when he highlighted that the same discrimination was also present for the other posts.[4] He was allowed to apply in a quick intervention.[5] His RTI revealed that doctors with disabilities are not considered eligible for specialist CHS posts in teaching, non-teaching as well as public health specialist cadres. Undeterred, he complained again and requested the health ministry to allow all eligible doctors with disability to apply for these posts. His single handed relentless fight for justice over four years ultimately forced Health Ministry to unlock 1,674 specialist central posts for disabled doctors.</p>
+                      <p>The disabled fighter fought not only for his but other disabled doctor’s rights. He also brought into open the discrimination by UPSC which disallowed doctors with disability to apply for various Central Health Services (CHS) posts. He himself was rejected in 2011 but fought and was later allowed to appear for the interview.[2][3] In 2013, his application was again rejected when he highlighted that the same discrimination was also present for the other posts.[4] He was allowed to apply in a quick intervention.[5] His RTI revealed that doctors with disabilities are not considered eligible for specialist CHS posts in teaching, non-teaching as well as public health specialist cadres. Undeterred, he complained again and requested the health ministry to allow all eligible doctors with disability to apply for these posts. His single handed relentless fight for justice over four years ultimately forced Health Ministry to unlock 1,674 specialist central posts for disabled doctors.</p>
+                      <p>The disabled fighter fought not only for his but other disabled doctor’s rights. He also brought into open the discrimination by UPSC which disallowed doctors with disability to apply for various Central Health Services (CHS) posts. He himself was rejected in 2011 but fought and was later allowed to appear for the interview.[2][3] In 2013, his application was again rejected when he highlighted that the same discrimination was also present for the other posts.[4] He was allowed to apply in a quick intervention.[5] His RTI revealed that doctors with disabilities are not considered eligible for specialist CHS posts in teaching, non-teaching as well as public health specialist cadres. Undeterred, he complained again and requested the health ministry to allow all eligible doctors with disability to apply for these posts. His single handed relentless fight for justice over four years ultimately forced Health Ministry to unlock 1,674 specialist central posts for disabled doctors.</p>
+                      <p>The disabled fighter fought not only for his but other disabled doctor’s rights. He also brought into open the discrimination by UPSC which disallowed doctors with disability to apply for various Central Health Services (CHS) posts. He himself was rejected in 2011 but fought and was later allowed to appear for the interview.[2][3] In 2013, his application was again rejected when he highlighted that the same discrimination was also present for the other posts.[4] He was allowed to apply in a quick intervention.[5] His RTI revealed that doctors with disabilities are not considered eligible for specialist CHS posts in teaching, non-teaching as well as public health specialist cadres. Undeterred, he complained again and requested the health ministry to allow all eligible doctors with disability to apply for these posts. His single handed relentless fight for justice over four years ultimately forced Health Ministry to unlock 1,674 specialist central posts for disabled doctors.</p>
+                  </div>
                 </div>
             </div>            
-        </section>
-        
-        <section class="mainsec section4" id="about">
-            <div class="well well-lg">
-                <h3><span id="nav-about"></span>About <small>Me</small></h3>
-                <div class="well flexcont">
-                    <div class="well well-sm flexitem">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <p class="panel-title text-center">Who I Am</p>
-                            </div>
-                            <div class="panel-body">
-                               <p>Hi, I am Satenndrra, a former corporate programmer/ trainer.</p>
-                               <p>I make programming accessible to entrepreneurs.</p>
-                               <p>I believe in <a href="https://en.wikipedia.org/wiki/Progressive_education" target="_blank">Progressive </a> and <a href="https://en.wikipedia.org/wiki/Experiential_learning" target="_blank">Experiential Pedagogy</a>.</p>
-                               <p>And, zero spoon-feeding.</p>
-                            </div>
-                        </div>  
-                    </div>                    
-                    <div class="well well-sm flexitem">
-                        <img src="../assets/pics/pp.png" height="280px" width="280px" alt="satenndrra profile photo">                          
-                    </div>
-                    <div class="well well-sm flexitem">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                                <p class="panel-title text-center">Get In Touch</p>
-                            </div>
-                            <div class="panel-body text-center">
-                                <a href="https://medium.com/@satenndrra" target="_blank">
-                                    <img src="https://png.icons8.com/medium-old/color/75" title="medium" width="75" height="75">
-                                </a>
-                                <a href="https://github.com/satenndrra" target="_blank">
-                                    <img src="https://png.icons8.com/octocat/color/75" title="github" width="75" height="75">
-                                </a>
-                                <a href="https://www.facebook.com/satenndrradotcom" target="_blank">
-                                    <img src="https://png.icons8.com/facebook/color/75" title="facebook" width="75" height="75">
-                                </a>
-                                <a href="https://twitter.com/satenndrra" target="_blank">
-                                    <img src="https://png.icons8.com/twitter/color/75" title="twitter" width="75" height="75">
-                                </a>
-                                <a href="https://in.linkedin.com/in/satenndrra" target="_blank">
-                                    <img src="https://png.icons8.com/linkedin/color/75" title="linkedin" width="75" height="75">
-                                </a>
-                                <a href="https://plus.google.com/116595111146561748932" target="_blank">
-                                    <img src="https://png.icons8.com/google-plus/color/75" title="google+" width="75" height="75">
-                                </a>
-                                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-contact">Contact Me</button>                                 
-                            </div>
-                        </div>  
-                      
-                    </div>
-                </div>
-
-            </div>        
-        </section>
-        
-        <footer class="footer navbar-fixed-bottom" id="foot">
-            <div class="fluid-container">
+            
+<!-- bottom logo -->                                    
+            <div class="container-fluid">
                 <div class="row">
-
-                    <div class="col-xs-12 text-center">
-                        <button class="btn btn-success btn-lg hidden-xs col-sm-* col-md-* col-lg-*" data-toggle="modal" data-target="#modal-events">Enroll</button>
-                        <button class="btn btn-success col-xs-* hidden-sm hidden-md hidden-lg" data-toggle="modal" data-target="#modal-events">Enroll</button>
-                    </div>       
-                    
-<!--                    
-                    <div class="col-xs-4">
-                        <p class="hidden-xs col-sm-* col-md-* col-lg-* text-center">Terms of Service</p>
-                        <p class="col-xs-* hidden-sm hidden-md hidden-lg text-left"><small>Terms of Service</small></p>
-                    </div>
-                    
                     <div class="col-xs-12 text-center">
                         <a class="hvr-grow" href="#">
-                            <img src="/assets/ico/favicon-32x32.png" alt="satenndrra logo">
+                            <img src="/assets/logo/logox.png" alt="satenndrra logo">
                         </a>
                     </div>      
-
-                    <div class="col-xs-4 text-center">
-                        <p class="hidden-xs col-sm-* col-md-* col-lg-* text-center">Satenndrra, CC-BY-SA</p>
-                        <p class="col-xs-* hidden-sm hidden-md hidden-lg text-right"><small>Satenndrra, CC-BY-SA</small></p>
-                    </div>     
-                  
-                    <div class="col-xs-4">
-                        <p class="hidden-xs col-sm-* col-md-* col-lg-* text-center">Privacy Policy</p> 
-                        <p class="col-xs-* hidden-sm hidden-md hidden-lg text-right"><small>Privacy Policy</small></p>
-                    </div>
--->                    
-                </div>
+                </div>  
             </div>
-        </footer>
-
+        </section>
+        
 <!-- Modal for EventsHigh Event Ticketing iframe-->
     <div id="modal-events" class="modal">
         <div class="modal-dialog">
