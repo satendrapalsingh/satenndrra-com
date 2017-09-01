@@ -1,33 +1,62 @@
 /* main style rules */
 
 *{
-    font-family: Verdana !important;
+    font-family: "Verdana" !important;
+    font-weight: bold;
 }
 
-html, body{
-    margin: 0;
-    height: 100%;
-    width: 100%;
+body{
     overflow-x: hidden;
 }
 
-.landing{
-    position: fixed;
-    margin: 0;
+.overlay{
+    position: absolute;
     height: 100%;
     width: 100%;
     background: rgba(204, 204, 204, 0.1);
+    z-index: 1;
+    pointer-events: none;
 }
+/* selectively allow clicks within the overlay */
+.allowclicks{
+    pointer-events: auto;
+}
+
+.landing{
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 100%;
+}
+
 .sublanding1{
     background-color: #F5F5F5;
 }
 .sublanding2{
     background-color: #222222;
 }
-.spantext1, .sublanding1{
+
+.sections{
+    top: 100%;
+    width: 100%;
+    position: absolute;
+}
+.free, .about{
+    background-color: #555555;    
+    color: #FFFAFA;
+}
+.bubble{
+    background-color: #F5F5F5;    
+}
+.meteor{
+    background-color: #222222;    
+}
+
+
+.spantext1, .sublanding1, .bubble{
     color: #222222;
 }
-.spantext2, .sublanding2{
+.spantext2, .sublanding2, .meteor, .light-hr{
     color: #F5F5F5;
 }
 
