@@ -1,9 +1,0 @@
-// main javascript code
-
-$(function(){
-    
-});
-
-
-
-

@@ -2,8 +2,6 @@
 
 *{
     font-family: "Verdana" !important;
-    font-weight: bold;
-    text-shadow: none;
 }
 
 body{
@@ -17,7 +15,7 @@ body{
     width: 100%;    
 }
 
-.landingparts{
+.landing{
     position: absolute;
     top:0;
     z-index: -1;
@@ -25,11 +23,11 @@ body{
     width: 100%;
 }
 
-.sublanding1{
-    background-color: #F5F5F5;
+.sublanding1, #bubble .panel-body, #bubble .panel-footer{
+    background-color: #F0F0F0 !important;
 }
-.sublanding2{
-    background-color: #222222;
+.sublanding2, #meteor .panel-body, #meteor .panel-footer{
+    background-color: #333333 !important;
 }
 
 .sections{
@@ -37,20 +35,15 @@ body{
     width: 100%;
     position: absolute;
 }
-.bubble{
-    background-color: #F5F5F5;    
-}
-.meteor{
-    background-color: #222222;    
-}
 
 
-.spantext1, .sublanding1, .bubble{
-    color: #222222;
+.spantext1, .sublanding1 h1, .sublanding1 h2, .sublanding1 h3, .sublanding1 h4, .sublanding1 h5, .sublanding1 h6, .sublanding1 p{
+    color: #333333 !important;
 }
-.spantext2, .sublanding2, .meteor, .light-hr{
-    color: #F5F5F5;
+.spantext2, .sublanding2 h1, .sublanding2 h2, .sublanding2 h3, .sublanding2 h4, .sublanding2 h5, .sublanding2 h6, .sublanding2 p{
+    color: #F0F0F0 !important;
 }
+
 
 /* remove hover-underline from anchors and links */
 a, u {
@@ -62,22 +55,10 @@ a, u {
     height: 8vh;
 }
 
-/* accordian buttons */
-.panel-group .panel-heading a:before {
-    font-family: FontAwesome;
-    content: "\f146";        /* fontawesome minus-square icon unicode*/
-    display: inline-block;
-    padding-right: 10px;
-    vertical-align: middle;
-}
-.panel-group .panel-heading a.collapsed:before {
-    content: "\f0fe";        /* fontawesome plus-square icon unicode*/
-}
-
 /* flexbox */
-.flexcont{
+.flexcont-landing{
     display: flex;
 }
-.flexchild{
+.flexchild-landing{
     align-items: stretch;
 }
