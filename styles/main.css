@@ -37,10 +37,6 @@ body{
     width: 100%;
     position: absolute;
 }
-.free, .about{
-    background-color: #555555;    
-    color: #FFFAFA;
-}
 .bubble{
     background-color: #F5F5F5;    
 }
