@@ -10,9 +10,17 @@ body{
 
 .overlay{
     position: absolute;
-    background: rgba(204, 204, 204, 0.1);
     height: 100%;
     width: 100%;    
+}
+.overlay-start{
+    position: absolute;
+    z-index: 1;
+    height: 100%;    
+    width: 100%;   
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);    
 }
 
 .landing{
@@ -35,7 +43,6 @@ body{
     width: 100%;
     position: absolute;
 }
-
 
 .spantext1, .sublanding1 h1, .sublanding1 h2, .sublanding1 h3, .sublanding1 h4, .sublanding1 h5, .sublanding1 h6, .sublanding1 p{
     color: #333333 !important;
