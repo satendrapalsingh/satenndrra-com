@@ -13,7 +13,7 @@ body{
     height: 100%;
     width: 100%;    
 }
-.overlay-start{
+.overlay-sections{
     position: absolute;
     z-index: 1;
     height: 100%;    
