@@ -4,15 +4,20 @@
     font-family: "Verdana" !important;
 }
 
-body{
+body, html{
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
 }
 
 .overlay{
     position: absolute;
     background: rgba(204, 204, 204, 0.1);
     height: 100%;
-    width: 100%;    
+    width: 100%; 
+    padding: 0;
 }
 
 .landing{
@@ -21,6 +26,8 @@ body{
     z-index: -1;
     height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .sublanding1, #bubble .panel-body, #bubble .panel-footer{
