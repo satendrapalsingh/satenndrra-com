@@ -22,7 +22,15 @@ body{
     left:50%;
     transform:translate(-50%, -50%);    
 }
-
+.overlay-section-next{
+    position: relative;
+    z-index: 1;
+    height: 100%;    
+    width: 100%;   
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);       
+}
 .landing{
     position: absolute;
     top:0;
