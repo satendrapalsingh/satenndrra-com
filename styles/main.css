@@ -1,15 +1,22 @@
 /* main style rules */
 
-*{
-    font-family: "Verdana" !important;
+html {
+    margin: 0;
+    height: 100%;
 }
 
-body, html{
-    overflow-x: hidden;
+body {
     margin: 0;
-    padding: 0;
     height: 100%;
-    width: 100%;
+    background: linear-gradient(90deg, #F0F0F0 50%, #333333 50%);    
+}
+
+.reverse{
+    background: linear-gradient(90deg, #333333 50%, #F0F0F0 50%); 
+}
+
+.wrapper {
+    min-height: 100%; 
 }
 
 .overlay{
@@ -30,10 +37,10 @@ body, html{
     padding: 0;
 }
 
-.sublanding1, #bubble .panel-body, #bubble .panel-footer{
+.sublanding1{
     background-color: #F0F0F0 !important;
 }
-.sublanding2, #meteor .panel-body, #meteor .panel-footer{
+.sublanding2{
     background-color: #333333 !important;
 }
 
@@ -43,19 +50,6 @@ body, html{
     position: absolute;
 }
 
-
-.spantext1, .sublanding1 h1, .sublanding1 h2, .sublanding1 h3, .sublanding1 h4, .sublanding1 h5, .sublanding1 h6, .sublanding1 p{
-    color: #333333 !important;
-}
-.spantext2, .sublanding2 h1, .sublanding2 h2, .sublanding2 h3, .sublanding2 h4, .sublanding2 h5, .sublanding2 h6, .sublanding2 p{
-    color: #F0F0F0 !important;
-}
-
-
-/* remove hover-underline from anchors and links */
-a, u {
-    text-decoration: none !important;
-}
 
 /* responsive spacing & text for landing */
 .dummyrow{
