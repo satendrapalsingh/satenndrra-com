@@ -4,58 +4,38 @@
     font-family: "Verdana" !important;
 }
 
-body{
-    overflow-x: hidden;
-}
-
-.overlay{
-    position: absolute;
+html, body {
+    margin: 0;
+    padding: 0;
     height: 100%;
     width: 100%;    
-}
-.overlay-sections{
-    position: absolute;
-    z-index: 1;
-    height: 100%;    
-    width: 100%;   
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);    
-}
-.overlay-section-next{
-    position: relative;
-    z-index: 1;
-    height: 100%;    
-    width: 100%;   
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);       
-}
-.landing{
-    position: absolute;
-    top:0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
+} 
+
+body {
+    background: linear-gradient(90deg, #F0F0F0 50%, #333333 50%);  
 }
 
-.sublanding1, #bubble .panel-body, #bubble .panel-footer{
+.fullscreen {
+    min-height: 100%; 
+}
+
+.light, .dark .panel-body, .dark .panel-footer{
     background-color: #F0F0F0 !important;
 }
-.sublanding2, #meteor .panel-body, #meteor .panel-footer{
+.dark, .light .panel-body, .light .panel-footer{
     background-color: #333333 !important;
 }
 
-.sections{
-    top: 100%;
-    width: 100%;
-    position: absolute;
+hr {
+	height: 50px;
+	border: 0;
+	box-shadow: 0 50px 50px -50px #000000 inset;
 }
 
-.spantext1, .sublanding1 h1, .sublanding1 h2, .sublanding1 h3, .sublanding1 h4, .sublanding1 h5, .sublanding1 h6, .sublanding1 p{
+.darktext, .light h1, .light h2, .light h3, .light h4, .light h5, .light h6, .light p{
     color: #333333 !important;
 }
-.spantext2, .sublanding2 h1, .sublanding2 h2, .sublanding2 h3, .sublanding2 h4, .sublanding2 h5, .sublanding2 h6, .sublanding2 p{
+.lighttext, .dark h1, .dark h3, .dark h4, .dark h5, .dark h6, .dark p{
     color: #F0F0F0 !important;
 }
 
@@ -70,10 +50,21 @@ a, u {
     height: 8vh;
 }
 
-/* flexbox */
-.flexcont-landing{
-    display: flex;
+/* if landscape mode is detected fro smaller screens , rotate the entire site -90 degrees to hint rotating to portrait - github gist from "https://gist.github.com/visnup/2605440"*/
+@media (max-width: 767px) and (orientation: landscape) {
+  body {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
 }
-.flexchild-landing{
-    align-items: stretch;
+
+/* turn these style rules on for debugging css layout issues
+* {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
 }
+*/
