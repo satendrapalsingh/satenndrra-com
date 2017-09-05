@@ -49,6 +49,9 @@ a, u {
 .dummyrow{
     height: 8vh;
 }
+.dummyrowless{
+    height: 4vh;
+}
 
 /* if landscape mode is detected fro smaller screens , rotate the entire site -90 degrees to hint rotating to portrait - github gist from "https://gist.github.com/visnup/2605440"*/
 @media (max-width: 767px) and (orientation: landscape) {
