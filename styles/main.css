@@ -4,11 +4,15 @@
     font-family: "Verdana" !important;
 }
 
+p{
+    font-size: 17px;
+}
+
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    width: 100%;    
+    width: 100%; 
 } 
 
 body {
