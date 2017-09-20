@@ -13,6 +13,7 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%; 
+    margin-top: 10px;
 } 
 
 body {
@@ -49,15 +50,18 @@ a, u {
     text-decoration: none !important;
 }
 
-/* responsive spacing & text for landing */
-.dummyrow{
-    height: 8vh;
+/* change modal background color */
+.modal-backdrop {
+   background: linear-gradient(90deg, #F0F0F0 0%, #333333 100%); 
 }
-.dummyrowless{
-    height: 4vh;
+.modal-header{
+   background-color: #333333;
+}
+.modal-body, .modal-footer{
+   background-color: #F0F0F0;   
 }
 
-/* if landscape mode is detected fro smaller screens , rotate the entire site -90 degrees to hint rotating to portrait - github gist from "https://gist.github.com/visnup/2605440"*/
+/* if landscape mode is detected for smaller screens , rotate the entire site -90 degrees to hint rotating to portrait - github gist from "https://gist.github.com/visnup/2605440"*/
 @media (max-width: 767px) and (orientation: landscape) {
   body {
     -webkit-transform: rotate(-90deg);
@@ -67,6 +71,33 @@ a, u {
     transform: rotate(-90deg);
   }
 }
+
+
+/* full-screen landing responsive spacing */
+@media (max-width: 319px) and (max-height: 567px) {
+    .dummyrow{
+        height: 1vh;
+    }  
+}
+@media (max-width: 374px) and (max-height: 666px) {
+    .dummyrow{
+        height: 6vh;
+    }  
+}
+@media (max-width: 383px) and (max-height: 599px) {
+    .dummyrow{
+        height: 11vh;
+    } 
+}
+@media (max-width: 413px) and (max-height: 735px) {
+    .dummyrow{
+        height: 15vh;
+    }  
+}
+.dummyrow{
+    height: 6vh;
+}
+
 
 /* turn these style rules on for debugging css layout issues
 * {
