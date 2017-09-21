@@ -24,6 +24,10 @@ body {
     min-height: 100%; 
 }
 
+.imgwrapper {
+   width: 50%;
+}
+
 .light, .dark .panel-body, .dark .panel-footer{
     background-color: #F0F0F0 !important;
 }
