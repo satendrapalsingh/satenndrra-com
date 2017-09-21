@@ -44,10 +44,18 @@ hr {
     color: #F0F0F0 !important;
 }
 
-
+/* top margin/padding too much for h2*/
+.narrow-h2 h2{
+    margin-top:0;
+    padding-top:0;
+}
 /* remove hover-underline from anchors and links */
 a, u {
     text-decoration: none !important;
+}
+/* fit container to text width */
+.fit-text{
+  display: inline-block;
 }
 
 /* change modal background color */
