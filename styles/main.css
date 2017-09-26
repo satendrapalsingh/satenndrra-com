@@ -42,6 +42,10 @@ hr {
 	box-shadow: 0 50px 50px -50px #000000 inset;
 }
 
+.btn-circle {
+  border-radius: 20%;
+}
+
 .darktext, .light h1, .light h2, .light h3, .light h4, .light h5, .light h6, .light p{
     color: #333333 !important;
 }
@@ -61,12 +65,12 @@ hr {
     content: "\f0fe";        /* fontawesome plus-square icon unicode*/
 }
 
-
 /* top margin/padding too much for h2*/
 .narrow-h2 h2{
     margin-top:-20px;
     padding-top:-20px;
 }
+
 /* remove hover-underline from anchors and links */
 a, u {
     text-decoration: none !important;
