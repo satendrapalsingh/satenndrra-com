@@ -48,7 +48,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-4 text-center">
                     <div class="panel panel-default">
                         <div class="panel-body">
-                            <h3>#Own<strong>The</strong>App</h3>
+                            <h3 class="whitetext">#OwnTheApp</h3>
                             <h5 class="text-muted"><strong>App Development for Entrepreneurs</strong></h5>  
                         </div>                        
                     </div>
@@ -66,7 +66,7 @@
             <div class="row dummyrow"></div>      
             <div class="row">
                     <a class="col-xs-12 text-center" href="#free">
-                        <button class="btn btn-lg btn-default">start</button>
+                        <button class="btn btn-lg btn-basic">start</button>
                     </a>                     
             </div>       
         </div>
@@ -78,11 +78,85 @@
                     <div class="panel panel-primary">
                         <div class="panel-heading">
                             <h4 class="whitetext">Free Tutorials</h4>
-                            <h5 class="whitetext">$0</h5>
+                            <h6 class="whitetext"><strong>$0 forever</strong></h6>
                         </div>
                         <div class="panel-body">
-                            <h5>Get started with self-paced and modular screencasts/tutorials.</h5>
-                            <p>Build your web-apps, websites & mobile apps without writing any code.</p>
+                            <h4><small><strong>Start building your apps for free with modular screencasts.</strong></small></h4>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-0 col-sm-1 col-lg-2"></div>
+                                    <div class="col-xs-12 col-sm-10 col-lg-8 text-left">
+                                        <ul class="nav nav-tabs text-center hidden-xs col-sm-* col-md-* col-lg-*">
+                                            <li class="active"><a href="#apps" data-toggle="tab">Code-Free or Code-Based</a></li>
+                                            <li><a href="#videos" data-toggle="tab">See Available Video Tutorials</a></li>
+                                            <li><a href="#help" data-toggle="tab">Get Help over Chat</a></li>
+                                        </ul>                                        
+                                        <ul class="nav nav-tabs text-center col-xs-* hidden-sm hidden-md hidden-lg">
+                                            <li class="active"><a href="#apps" data-toggle="tab">apps</a></li>
+                                            <li><a href="#videos" data-toggle="tab">videos</a></li>                                            
+                                            <li><a href="#help" data-toggle="tab">help</a></li>
+                                        </ul>                                        
+                                        <div id="myTabContent" class="tab-content">
+                                            <div class="tab-pane fade active in" id="apps">
+                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                                             </div>
+                                            <div class="tab-pane fade container-fluid" id="videos">
+                                                <br>
+                                            <!-- filter/sort code adapted from filterizr.js function reference: http://yiotis.net/filterizr/  -->                    
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-sm btn-basic" data-filter="all">show_all</button>
+                                                    <button type="button" class="btn btn-sm btn-basic" data-sortAsc>sort_by_date</button>    
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <div class="btn-group">                                                
+                                                    <button type="button" class="btn btn-sm btn-basic" data-filter="1">code-free</button>
+                                                    <button type="button" class="btn btn-sm btn-basic" data-filter="2">code-based</button>
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <div class="btn-group">                                                
+                                                    <button type="button" class="btn btn-sm btn-basic" data-filter="3">in_bangalore</button>
+                                                    <button type="button" class="btn btn-sm btn-basic" data-filter="4">in_hyderabad</button>
+                                                </div>
+                                                <div class="hideme">
+                                                    <select data-sortOrder>
+                                                        <option value="date"> sort by date </option>
+                                                    </select>           
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <ul class="list-group filtr-container">
+                                                    <li class="list-group-item filtr-item list-group-item-info" data-category="1, 4" data-date="2019-01-01" data-sort="date">
+                                                        build your first webapp: meteor, bangalore, 01-01-2019
+                                                        <button class="btn btn-default btn-md" data-toggle="modal" data-target="">book</button>                                                        
+                                                    </li>
+                                                    <li class="list-group-item filtr-item list-group-item-danger" data-category="2, 4" data-date="2018-02-09" data-sort="date">
+                                                        build your first webapp: html-css, bangalore, 09-02-2018
+                                                        <button class="btn btn-default btn-md" data-toggle="modal" data-target="">book</button>                                                           
+                                                    </li>
+                                                    <li class="list-group-item filtr-item list-group-item-warning" data-category="3, 6" data-date="2017-12-24" data-sort="date">
+                                                        build your first webapp: javascript, delhi, 24-12-2017
+                                                        <button class="btn btn-default btn-md" data-toggle="modal" data-target="">book</button>                                                           
+                                                    </li>   
+                                                    <li class="list-group-item filtr-item list-group-item-success" data-category="3, 7" data-date="2017-10-03" data-sort="date">
+                                                        build your first webapp: javascript, hyderabad, 03-10-2017
+                                                        <button class="btn btn-default btn-md" data-toggle="modal" data-target="">book</button>                                                           
+                                                    </li>    
+                                                    <li class="list-group-item filtr-item list-group-item-info" data-category="1, 5" data-date="2017-12-15" data-sort="date">
+                                                        build your first webapp: meteor, chennai, 15-12-2017
+                                                        <button class="btn btn-default btn-md" data-toggle="modal" data-target="">book</button>                                                           
+                                                    </li>  
+                                                </ul>                     
+                                            </div>
+                                            <div class="tab-pane fade" id="help">
+                                                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+                                            </div>                                              
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-0 col-sm-1 col-lg-2"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -97,11 +171,13 @@
                     <div class="panel panel-success">
                         <div class="panel-heading">
                             <h4 class="whitetext">Live Workshops</h4>
-                            <h5 class="whitetext">$99/shop</h5>
+                            <h6 class="whitetext"><strong>$99 / workshop</strong></h6>
                         </div>
                         <div class="panel-body">
                             <h5>Build your first app with an instructor-led workshop.</h5>
-                            <p>Build your web-apps, websites & mobile apps without writing any code.</p>
+                            <p>Use the townscript event-booking widget.</p>
+                            <p>Request an offline workshop in your city.</p>
+                            <p>Request a customized workshop for your organization.</p>
                         </div>
                     </div>
                 </div>
@@ -116,7 +192,7 @@
                     <div class="panel panel-warning">
                         <div class="panel-heading">
                             <h4 class="whitetext">App Recipes</h4>
-                            <h5 class="whitetext">$19/month</h5>
+                            <h6 class="whitetext"><strong>$19 / month</strong></h6>
                         </div>
                         <div class="panel-body">
                             <h5>Learn along with me as I build real startup apps.</h5>
@@ -135,11 +211,11 @@
                     <div class="panel panel-info">
                         <div class="panel-heading">
                             <h4 class="whitetext">Online Coaching</h4>
-                            <h5 class="whitetext">$49/hour</h5>                        
+                            <h6 class="whitetext"><strong>$49 / hour</strong></h6>
                         </div>
                         <div class="panel-body">
                             <h5>Get private mentoring for your own app development.</h5>
-                            <p>Build your web-apps, websites & mobile apps without writing any code.</p>
+                            <p>use simplybook.me widget "https://simplybook.me/pricing"</p>
                         </div>
                     </div>
                 </div>
@@ -152,8 +228,8 @@
                 <div class="col-xs-0 col-sm-1"></div> 
                 <div class="col-xs-12 col-sm-10 text-center">
                     <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4>FAQs</h4>
+                        <div class="panel-heading panel-grey">
+                            <h4 class="whitetext">FAQs</h4>
                         </div>
                         <div class="panel-body container-fluid">
                             <div class="row">
@@ -291,8 +367,8 @@
                 <div class="col-xs-0 col-sm-1"></div> 
                 <div class="col-xs-12 col-sm-10 text-center">
                     <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4>About</h4>
+                        <div class="panel-heading panel-grey">
+                            <h4 class="whitetext">About</h4>
                         </div>                        
                         <div class="panel-body container-fluid">
                             <div class="row">
@@ -303,31 +379,50 @@
                                 <div class="col-xs-0 col-sm-2 col-md-3 col-lg-4"></div>                       
                             </div> 
                             <br>
-                            <p>Hi, I am Satenndrra.</p>
-                            <p>I have worked as a corporate programmer and trainer for over a decade. And now, via this site, I help entrepreneurs build & launch their own apps.</p>
-                            <p>Drop me a note.</p>
-                            <button class="btn btn-basic btn-lg" data-toggle="modal" data-target="#modal-contact">contact me</button>
+                            <div class="row">
+                                <div class="col-xs-0 col-sm-2 col-md-3"></div>
+                                <div class="col-xs-12 col-sm-8 col-md-6">                                
+                                    <p>Hi, I am Satenndrra.</p>
+                                    <p>I have worked as a corporate programmer and trainer for over a decade. And now, via this site, I help entrepreneurs build & launch their own apps.</p>
+                                </div>
+                                <div class="col-xs-0 col-sm-2 col-md-3"></div> 
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-xs-0 col-sm-2 col-md-3"></div>
+                                <div class="col-xs-12 col-sm-8 col-md-6">                              
+                                    <p>Drop me a note.</p>
+                                    <button class="btn btn-basic btn-lg" data-toggle="modal" data-target="#modal-contact">contact me</button>
+                                </div>
+                                <div class="col-xs-0 col-sm-2 col-md-3"></div> 
+                            </div>
                             <br>
                             <br>
-                            <p>Catch me on the social networks.</p>
-                            <a href="https://medium.com/@satenndrra" target="_blank">
-                                <img src="https://png.icons8.com/medium-old/color/75" title="medium" width="50" height="50">
-                            </a>
-                            <a href="https://github.com/satenndrra" target="_blank">
-                                <img src="https://png.icons8.com/octocat/color/75" title="github" width="50" height="50">
-                            </a>
-                            <a href="https://www.facebook.com/satenndrradotcom" target="_blank">
-                                <img src="https://png.icons8.com/facebook/color/75" title="facebook" width="50" height="50">
-                            </a>
-                            <a href="https://twitter.com/satenndrra" target="_blank">
-                                <img src="https://png.icons8.com/twitter/color/75" title="twitter" width="50" height="50">
-                            </a>
-                            <a href="https://in.linkedin.com/in/satenndrra" target="_blank">
-                                <img src="https://png.icons8.com/linkedin/color/75" title="linkedin" width="50" height="50">
-                            </a>
-                            <a href="https://plus.google.com/116595111146561748932" target="_blank">
-                                <img src="https://png.icons8.com/google-plus/color/75" title="google+" width="50" height="50">
-                            </a>                            
+                            <div class="row">
+                                <div class="col-xs-0 col-sm-2 col-md-3"></div>
+                                <div class="col-xs-12 col-sm-8 col-md-6">   
+                                    <p>Catch me on the social networks.</p>
+                                    <a href="https://medium.com/@satenndrra" target="_blank">
+                                        <img src="https://png.icons8.com/medium-old/color/75" title="medium" width="50" height="50">
+                                    </a>
+                                    <a href="https://github.com/satenndrra" target="_blank">
+                                        <img src="https://png.icons8.com/octocat/color/75" title="github" width="50" height="50">
+                                    </a>
+                                    <a href="https://www.facebook.com/satenndrradotcom" target="_blank">
+                                        <img src="https://png.icons8.com/facebook/color/75" title="facebook" width="50" height="50">
+                                    </a>
+                                    <a href="https://twitter.com/satenndrra" target="_blank">
+                                        <img src="https://png.icons8.com/twitter/color/75" title="twitter" width="50" height="50">
+                                    </a>
+                                    <a href="https://in.linkedin.com/in/satenndrra" target="_blank">
+                                        <img src="https://png.icons8.com/linkedin/color/75" title="linkedin" width="50" height="50">
+                                    </a>
+                                    <a href="https://plus.google.com/116595111146561748932" target="_blank">
+                                        <img src="https://png.icons8.com/google-plus/color/75" title="google+" width="50" height="50">
+                                    </a>
+                                </div>
+                                <div class="col-xs-0 col-sm-2 col-md-3"></div> 
+                            </div>                                
                         </div>                        
                     </div>
                 </div>
@@ -335,13 +430,21 @@
             </div>  
         </div>   
         <div id="bot" class="container-fluid">  
-            <div class="row">
-                <div class="col-xs-6 text-center">
-                    <button class="btn btn-basic btn-sm" data-toggle="modal" data-target="#modal-pripo">Privacy Policy</button>
-                </div>                    
+            <div class="row hidden-xs col-sm-* col-md-* col-lg-*">
                 <div class="col-xs-6 text-center">
                     <button class="btn btn-basic btn-sm" data-toggle="modal" data-target="#modal-tos">Terms of Service</button>
+                </div>  
+                <div class="col-xs-6 text-center">
+                    <button class="btn btn-basic btn-sm" data-toggle="modal" data-target="#modal-pripo">Privacy Policy</button>
+                </div>                      
+            </div>        
+            <div class="row col-xs-* hidden-sm hidden-md hidden-lg">
+                <div class="col-xs-6 text-center">
+                    <button class="btn btn-basic btn-sm" data-toggle="modal" data-target="#modal-tos">Terms</button>
                 </div>                  
+                <div class="col-xs-6 text-center">
+                    <button class="btn btn-basic btn-sm" data-toggle="modal" data-target="#modal-pripo">Privacy</button>
+                </div>                    
             </div>        
             <br>
             <div class="row">
@@ -381,10 +484,9 @@
             </div>
         </div>
     </div>
-
+    
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/1.2.5/jquery.filterizr.min.js"></script>
         <script type="text/javascript" src="/scripts/main.js"></script>
     </body>

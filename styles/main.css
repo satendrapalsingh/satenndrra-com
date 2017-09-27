@@ -16,6 +16,11 @@ html, body {
     margin-top: 12px;
 } 
 
+.hideme{
+    display: none;
+    visibility: hidden;
+}
+
 /* hr style from "https://codepen.io/ibrahimjabbari/pen/ozinB" */
 hr{
   border: 0; 
@@ -37,9 +42,18 @@ hr{
     height: 6vh;
 }
 
+#land .panel-body { 
+    background:#666666;
+}
+
+.panel-grey { 
+    background:#999999 !important;
+}
+
 /* remove hover-underline from anchors and links */
 a, u {
     text-decoration: none !important;
+    color:#000000 !important;    
 }
 
 /* plus-minus symbol for accordians */
@@ -59,3 +73,12 @@ a, u {
     height: 4vh;
     }
 }
+
+
+/* turn these style rules on for debugging css layout issues
+* {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+}
+ */
