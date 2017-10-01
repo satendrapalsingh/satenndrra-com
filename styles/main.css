@@ -37,7 +37,7 @@ html, body {
 }
 
 /* remove hover-underline from anchors and links */
-a, u {
+a.btn {
     text-decoration: none !important;
     color:#000000 !important;    
 }
@@ -54,12 +54,12 @@ a, u {
     content: "\f0fe";        /* fontawesome plus-square icon unicode*/
 }
 
+/* responsive vertical spacing */
 @media (max-width: 767px) and (max-height: 1023px){
     .dummyrow{
     height: 4vh;
     }
 }
-
 
 /* turn these style rules on for debugging css layout issues
 * {
