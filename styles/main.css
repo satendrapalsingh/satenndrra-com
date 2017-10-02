@@ -42,18 +42,6 @@ a.btn {
     color:#000000 !important;    
 }
 
-/* plus-minus symbol for accordians */
-.panel-group .panel-heading a:before {
-    font-family: FontAwesome;
-    content: "\f146";        /* fontawesome minus-square icon unicode*/
-    display: inline-block;
-    padding-right: 10px;
-    vertical-align: middle;
-}
-.panel-group .panel-heading a.collapsed:before {
-    content: "\f0fe";        /* fontawesome plus-square icon unicode*/
-}
-
 /* responsive vertical spacing */
 @media (max-width: 767px) and (max-height: 1023px){
     .dummyrow{
